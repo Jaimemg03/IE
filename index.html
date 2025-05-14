@@ -54,31 +54,38 @@
       }
     }
 
-    if (archivosSeleccionados.size === 0) {
-      throw new Error("No se ha seleccionado ningún archivo JSON.");
-    }
-
-    const numerosArchivos = Array.from(archivosSeleccionados);
-    const promesas = numerosArchivos.map(numero =>
-      fetch(`test_tema_${numero}.json`) // Modifica la ruta según sea necesario
-        .then(response => {
-          if (!response.ok) {
-            throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
-          }
-          return response.json();
+    function cargarPreguntas() {
+      if (archivosSeleccionados.size === 0) {
+        throw new Error("No se ha seleccionado ningún archivo JSON.");
+      }
+    
+      const numerosArchivos = Array.from(archivosSeleccionados);
+      const promesas = numerosArchivos.map(numero =>
+        fetch(`test_tema_${numero}.json`) // Modifica la ruta según sea necesario
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
+            }
+            return response.json();
+          })
+      );
+    
+      Promise.all(promesas)
+        .then(dataArrays => {
+          todasLasPreguntas = dataArrays.flat(); // Combina todas las preguntas en un solo array
         })
-    );
-
-    Promise.all(promesas)
-      .then(dataArrays => {
-        todasLasPreguntas = dataArrays.flat(); // Combina todas las preguntas en un solo array
-      })
-      .catch(error => {
-        alert("No se pudieron cargar uno o más archivos JSON. Verifica que los archivos existen y son válidos.");
-        console.error(error);
-      });
-
+        .catch(error => {
+          alert("No se pudieron cargar uno o más archivos JSON. Verifica que los archivos existen y son válidos.");
+          console.error(error);
+        });
     function generarPreguntas() {
+      if (archivosSeleccionados.size === 0) {
+        alert("Por favor, selecciona al menos un tema antes de generar preguntas.");
+        return;
+      }
+    
+      cargarPreguntas();
+    
       const cantidad = parseInt(document.getElementById("cantidad").value);
       preguntasSeleccionadas = todasLasPreguntas.sort(() => 0.5 - Math.random()).slice(0, cantidad);
       const formulario = document.getElementById("formulario");
@@ -92,6 +99,8 @@
           </div>
         `;
       });
+      document.getElementById("resultado").textContent = "";
+    }
       document.getElementById("resultado").textContent = "";
     }
 
