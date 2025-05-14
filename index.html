@@ -28,38 +28,38 @@
     let preguntasSeleccionadas = [];
     let numeroArchivoJson = 0;
 
-      const contenedorBotones = document.createElement("div");
-      contenedorBotones.id = "contenedorBotones";
-      contenedorBotones.style.marginBottom = "20px";
-      document.body.insertBefore(contenedorBotones, document.getElementById("formulario"));
+    const contenedorBotones = document.createElement("div");
+    contenedorBotones.id = "contenedorBotones";
+    contenedorBotones.style.marginBottom = "20px";
+    document.body.insertBefore(contenedorBotones, document.getElementById("formulario"));
 
-      for (let i = 1; i <= 7; i++) {
-        const boton = document.createElement("button");
-        boton.textContent = `Tema ${i}`;
-        boton.className = "boton";
-        boton.style.marginRight = "10px";
-        boton.onclick = () => seleccionarTema(i);
-        contenedorBotones.appendChild(boton);
+    for (let i = 1; i <= 7; i++) {
+      const boton = document.createElement("button");
+      boton.textContent = `Tema ${i}`;
+      boton.className = "boton";
+      boton.style.marginRight = "10px";
+      boton.onclick = () => seleccionarTema(boton, i);
+      contenedorBotones.appendChild(boton);
+    }
+
+    let archivosSeleccionados = new Set();
+
+    function seleccionarTema(boton, numero) {
+      if (!archivosSeleccionados.has(numero)) {
+        archivosSeleccionados.add(numero);
+        boton.style.backgroundColor = "#d4edda"; // Cambia el color del botón para indicar selección
+      } else {
+        archivosSeleccionados.delete(numero);
+        boton.style.backgroundColor = ""; // Restaura el color original del botón
       }
+    }
 
-      let archivosSeleccionados = "";
-
-      function seleccionarTema(numero) {
-        if (!archivosSeleccionados.includes(numero.toString())) {
-        archivosSeleccionados += archivosSeleccionados ? `,${numero}` : `${numero}`;
-        alert(`Tema ${numero} seleccionado.`);
-        } else {
-        alert(`El tema ${numero} ya está seleccionado.`);
-        }
-      }
-
-
-    if (!archivosSeleccionados) {
+    if (archivosSeleccionados.size === 0) {
       throw new Error("No se ha seleccionado ningún archivo JSON.");
     }
 
-    const numerosArchivos = archivosSeleccionados.split(",").map(num => num.trim());
-    const promesas = numerosArchivos.map(numero => 
+    const numerosArchivos = Array.from(archivosSeleccionados);
+    const promesas = numerosArchivos.map(numero =>
       fetch(`test_tema_${numero}.json`) // Modifica la ruta según sea necesario
         .then(response => {
           if (!response.ok) {
