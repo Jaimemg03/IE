@@ -1,0 +1,126 @@
+[
+  {
+    "pregunta": "El bienestar subjetivo se compone de satisfacción con la vida y balance emocional positivo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La teoría hedónica del bienestar se enfoca en el desarrollo del potencial personal.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La gratitud es una práctica asociada con mayor bienestar psicológico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El bienestar psicológico según Ryff incluye el crecimiento personal y la autoaceptación.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las emociones positivas amplían los recursos personales según la teoría de Fredrickson.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estado de flow ocurre cuando la actividad realizada es demasiado fácil o aburrida.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Pensar en el 'mejor yo posible' puede aumentar la motivación personal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento positivo implica distorsionar la realidad para evitar el sufrimiento.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Las visualizaciones positivas activan redes cerebrales similares a la experiencia real.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Practicar la gratitud está asociado con niveles más bajos de ansiedad y depresión.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las personas con alto bienestar psicológico suelen experimentar menos emociones positivas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El mindfulness implica atender al momento presente sin juzgarlo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La práctica de mindfulness favorece la regulación emocional.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Vivir en piloto automático está asociado a mayor bienestar y satisfacción vital.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La empatía cognitiva consiste en comprender la perspectiva de los demás.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La empatía emocional se basa en experimentar directamente las emociones del otro.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La empatía siempre implica estar de acuerdo con lo que el otro siente o piensa.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La empatía es una habilidad importante en la inteligencia emocional.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La empatía puede entrenarse y desarrollarse con práctica.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Técnicas como el perdón y la escritura expresiva promueven bienestar emocional.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las intervenciones positivas no tienen respaldo empírico.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El sentido de vida es un componente relevante en el bienestar psicológico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las técnicas de autoafirmación ayudan a reducir la autocrítica excesiva.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El apoyo social es uno de los factores que más predicen el bienestar subjetivo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La extraversión y la responsabilidad son rasgos de personalidad asociados a mayor bienestar.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El neuroticismo se asocia con mayor satisfacción vital y equilibrio emocional.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El estado de flow se alcanza cuando hay un equilibrio entre desafío y habilidad.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Durante el flow el sentido del tiempo suele distorsionarse.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estado de flow es incompatible con emociones positivas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El pensamiento positivo contribuye a la resiliencia frente a la adversidad.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El optimismo no influye en la recuperación física o emocional.",
+    "respuesta": false
+  }
+]

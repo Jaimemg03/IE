@@ -1,0 +1,122 @@
+[
+  {
+    "pregunta": "La comunicación requiere siempre la presencia física de emisor y receptor.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El código en la comunicación debe ser compartido para que el mensaje sea comprendido.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El contexto no afecta la interpretación de los mensajes en la comunicación social.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación bidireccional implica retroalimentación entre los participantes.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El ruido puede ser tanto físico como psicológico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El canal es el medio a través del cual se transmite el mensaje.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El 93% de la comunicación humana es no verbal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Los gestos no tienen influencia en la interpretación del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La paralingüística incluye el tono, volumen y velocidad del habla.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Una postura corporal cerrada puede transmitir inseguridad o defensa.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estilo asertivo implica respeto hacia uno mismo y hacia los demás.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La comunicación pasiva favorece la expresión clara de las necesidades.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación agresiva puede deteriorar las relaciones interpersonales.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estilo pasivo-agresivo combina sumisión con resentimiento indirecto.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Escuchar activamente implica interrumpir para dar consejos inmediatos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa incluye contacto visual, asentimiento y preguntas clarificadoras.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Una escucha empática fomenta la comprensión y el vínculo interpersonal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Preparar un guion flexible ayuda a reducir el miedo escénico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El lenguaje corporal no influye en el impacto de una presentación pública.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El uso de ejemplos y metáforas facilita la comprensión del público.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Dar retroalimentación debe enfocarse solo en los errores del otro.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El uso del 'yo' en vez del 'tú' al comunicar retroalimentación es más efectivo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Recibir retroalimentación positiva puede aumentar la motivación.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La comunicación empática requiere reconocer y validar emociones ajenas.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Expresar emociones con claridad mejora las relaciones interpersonales.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Los prejuicios personales pueden actuar como barreras de comunicación.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El uso excesivo de tecnicismos facilita la comprensión del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Escuchar con intención de responder es menos efectivo que escuchar para comprender.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Una comunicación eficaz contribuye al bienestar emocional y social.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La comunicación es irrelevante en contextos de resolución de conflictos.",
+    "respuesta": false
+  }
+]
