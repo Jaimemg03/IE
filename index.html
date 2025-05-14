@@ -28,24 +28,29 @@
     let preguntasSeleccionadas = [];
     let numeroArchivoJson = 0;
 
-    numeroArchivoJson = prompt("Selecciona el número del archivo JSON (1-7):");
+    const archivosSeleccionados = prompt("Selecciona los números de los archivos JSON separados por comas (ejemplo: 1,2,3):");
 
-    if (numeroArchivoJson === 0) {
+    if (!archivosSeleccionados) {
       throw new Error("No se ha seleccionado ningún archivo JSON.");
     }
 
-    fetch(`test_tema_${numeroArchivoJson}.json`) // Modifica la ruta según sea necesario
-      .then(response => {
-        if (!response.ok) {
-          throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
-        }
-        return response.json();
-      })
-      .then(data => {
-        todasLasPreguntas = data;
+    const numerosArchivos = archivosSeleccionados.split(",").map(num => num.trim());
+    const promesas = numerosArchivos.map(numero => 
+      fetch(`test_tema_${numero}.json`) // Modifica la ruta según sea necesario
+        .then(response => {
+          if (!response.ok) {
+            throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
+          }
+          return response.json();
+        })
+    );
+
+    Promise.all(promesas)
+      .then(dataArrays => {
+        todasLasPreguntas = dataArrays.flat(); // Combina todas las preguntas en un solo array
       })
       .catch(error => {
-        alert("No se pudo cargar el archivo JSON. Verifica que el archivo existe y es válido.");
+        alert("No se pudieron cargar uno o más archivos JSON. Verifica que los archivos existen y son válidos.");
         console.error(error);
       });
 
