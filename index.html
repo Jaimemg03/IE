@@ -1,0 +1,77 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test de Inteligencia Emocional</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f3; }
+    .pregunta { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .boton { margin: 15px 0; padding: 10px 15px; font-size: 16px; }
+    .correcta { background-color: #d4edda; }
+    .incorrecta { background-color: #f8d7da; }
+    #resultado { font-weight: bold; margin-top: 20px; font-size: 18px; }
+  </style>
+</head>
+<body>
+  <h1>Test de Inteligencia Emocional</h1>
+  <label for="cantidad">¿Cuántas preguntas deseas responder? (máx: 100)</label>
+  <input type="number" id="cantidad" min="1" max="100" value="10">
+  <button onclick="generarPreguntas()" class="boton">Generar preguntas</button>
+
+  <form id="formulario"></form>
+  <button onclick="corregir()" class="boton">Enviar respuestas</button>
+  <div id="resultado"></div>
+
+  <script>
+    let todasLasPreguntas = [];
+    let preguntasSeleccionadas = [];
+
+    fetch("test_temas_1_2.json")
+      .then(response => response.json())
+      .then(data => {
+        todasLasPreguntas = data;
+      });
+
+    function generarPreguntas() {
+      const cantidad = parseInt(document.getElementById("cantidad").value);
+      preguntasSeleccionadas = todasLasPreguntas.sort(() => 0.5 - Math.random()).slice(0, cantidad);
+      const formulario = document.getElementById("formulario");
+      formulario.innerHTML = "";
+      preguntasSeleccionadas.forEach((p, index) => {
+        formulario.innerHTML += `
+          <div class="pregunta" id="pregunta${index}">
+            <p><strong>${index + 1}. </strong>${p.pregunta}</p>
+            <label><input type="radio" name="p${index}" value="true"> Verdadero</label><br>
+            <label><input type="radio" name="p${index}" value="false"> Falso</label>
+          </div>
+        `;
+      });
+      document.getElementById("resultado").textContent = "";
+    }
+
+    function corregir() {
+      let correctas = 0;
+      preguntasSeleccionadas.forEach((p, index) => {
+        const respuesta = document.querySelector(`input[name="p${index}"]:checked`);
+        const divPregunta = document.getElementById(`pregunta${index}`);
+        if (respuesta) {
+          if (respuesta.value === p.respuesta.toString()) {
+            correctas++;
+            divPregunta.classList.add("correcta");
+            divPregunta.classList.remove("incorrecta");
+          } else {
+            divPregunta.classList.add("incorrecta");
+            divPregunta.classList.remove("correcta");
+          }
+        } else {
+          divPregunta.classList.add("incorrecta");
+        }
+      });
+
+      const resultado = document.getElementById("resultado");
+      resultado.textContent = `Has acertado ${correctas} de ${preguntasSeleccionadas.length} preguntas.`;
+    }
+  </script>
+</body>
+</html>

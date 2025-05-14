@@ -1,0 +1,402 @@
+[
+  {
+    "pregunta": "La comunicación efectiva busca que el receptor interprete exactamente lo que el emisor desea transmitir.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El ruido en la comunicación siempre es externo al proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La retroalimentación no es un componente esencial del proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa requiere atención plena y reconocimiento de la comunicación no verbal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El canal de comunicación hace referencia al contenido del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El lenguaje corporal tiene un papel menor que el lenguaje verbal en la transmisión emocional.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Mirar directamente a los ojos siempre se interpreta como una señal positiva.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Una sonrisa genuina se caracteriza por la activación de músculos alrededor de los ojos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "En la comunicación pública, una actitud relajada y empática mejora la conexión con la audiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Usar muletillas mejora la fluidez del discurso en público.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El bienestar subjetivo se basa exclusivamente en la ausencia de emociones negativas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La teoría eudaimónica plantea que el bienestar surge del desarrollo del potencial humano.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Autoaceptación y autonomía son dimensiones del bienestar psicológico según Ryff.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las emociones positivas ayudan a construir recursos personales duraderos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La felicidad y la satisfacción vital siempre se presentan de forma simultánea.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El mindfulness favorece la atención plena en el momento presente sin juicio.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estado de flow se alcanza cuando una actividad es desafiante, atractiva y significativa.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La visualización positiva no tiene respaldo en estudios sobre activación cerebral.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El optimismo y la autoestima son factores relacionados con el bienestar personal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El nivel educativo es un predictor fuerte del bienestar subjetivo en todos los contextos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El estrés surge cuando una situación supera los recursos percibidos del individuo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El afrontamiento evitativo suele relacionarse con el manejo eficaz del estrés.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La organización contextual implica preparación fisiológica, cognitiva y conductual.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Procrastinar siempre es señal de pereza y falta de voluntad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Las distorsiones cognitivas pueden afectar el rendimiento académico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento polarizado permite una visión más equilibrada de la realidad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El locus de control interno se relaciona con mayor capacidad de afrontamiento.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La personalidad tipo A se asocia a bajo estrés y buena salud cardiovascular.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La resiliencia implica flexibilidad, optimismo y capacidad para superar la adversidad.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El apoyo social solo tiene impacto emocional y no afecta al bienestar físico.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación efectiva busca que el receptor interprete exactamente lo que el emisor desea transmitir.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El ruido en la comunicación siempre es externo al proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La retroalimentación no es un componente esencial del proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa requiere atención plena y reconocimiento de la comunicación no verbal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El canal de comunicación hace referencia al contenido del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El lenguaje corporal tiene un papel menor que el lenguaje verbal en la transmisión emocional.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Mirar directamente a los ojos siempre se interpreta como una señal positiva.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Una sonrisa genuina se caracteriza por la activación de músculos alrededor de los ojos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "En la comunicación pública, una actitud relajada y empática mejora la conexión con la audiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Usar muletillas mejora la fluidez del discurso en público.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El bienestar subjetivo se basa exclusivamente en la ausencia de emociones negativas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La teoría eudaimónica plantea que el bienestar surge del desarrollo del potencial humano.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Autoaceptación y autonomía son dimensiones del bienestar psicológico según Ryff.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las emociones positivas ayudan a construir recursos personales duraderos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La felicidad y la satisfacción vital siempre se presentan de forma simultánea.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El mindfulness favorece la atención plena en el momento presente sin juicio.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estado de flow se alcanza cuando una actividad es desafiante, atractiva y significativa.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La visualización positiva no tiene respaldo en estudios sobre activación cerebral.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El optimismo y la autoestima son factores relacionados con el bienestar personal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El nivel educativo es un predictor fuerte del bienestar subjetivo en todos los contextos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El estrés surge cuando una situación supera los recursos percibidos del individuo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El afrontamiento evitativo suele relacionarse con el manejo eficaz del estrés.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La organización contextual implica preparación fisiológica, cognitiva y conductual.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Procrastinar siempre es señal de pereza y falta de voluntad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Las distorsiones cognitivas pueden afectar el rendimiento académico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento polarizado permite una visión más equilibrada de la realidad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El locus de control interno se relaciona con mayor capacidad de afrontamiento.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La personalidad tipo A se asocia a bajo estrés y buena salud cardiovascular.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La resiliencia implica flexibilidad, optimismo y capacidad para superar la adversidad.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El apoyo social solo tiene impacto emocional y no afecta al bienestar físico.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación efectiva busca que el receptor interprete exactamente lo que el emisor desea transmitir.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El ruido en la comunicación siempre es externo al proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La retroalimentación no es un componente esencial del proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa requiere atención plena y reconocimiento de la comunicación no verbal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El canal de comunicación hace referencia al contenido del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El lenguaje corporal tiene un papel menor que el lenguaje verbal en la transmisión emocional.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Mirar directamente a los ojos siempre se interpreta como una señal positiva.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Una sonrisa genuina se caracteriza por la activación de músculos alrededor de los ojos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "En la comunicación pública, una actitud relajada y empática mejora la conexión con la audiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Usar muletillas mejora la fluidez del discurso en público.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El bienestar subjetivo se basa exclusivamente en la ausencia de emociones negativas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La teoría eudaimónica plantea que el bienestar surge del desarrollo del potencial humano.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Autoaceptación y autonomía son dimensiones del bienestar psicológico según Ryff.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las emociones positivas ayudan a construir recursos personales duraderos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La felicidad y la satisfacción vital siempre se presentan de forma simultánea.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El mindfulness favorece la atención plena en el momento presente sin juicio.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El estado de flow se alcanza cuando una actividad es desafiante, atractiva y significativa.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La visualización positiva no tiene respaldo en estudios sobre activación cerebral.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El optimismo y la autoestima son factores relacionados con el bienestar personal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El nivel educativo es un predictor fuerte del bienestar subjetivo en todos los contextos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El estrés surge cuando una situación supera los recursos percibidos del individuo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El afrontamiento evitativo suele relacionarse con el manejo eficaz del estrés.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La organización contextual implica preparación fisiológica, cognitiva y conductual.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Procrastinar siempre es señal de pereza y falta de voluntad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Las distorsiones cognitivas pueden afectar el rendimiento académico.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento polarizado permite una visión más equilibrada de la realidad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El locus de control interno se relaciona con mayor capacidad de afrontamiento.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La personalidad tipo A se asocia a bajo estrés y buena salud cardiovascular.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La resiliencia implica flexibilidad, optimismo y capacidad para superar la adversidad.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El apoyo social solo tiene impacto emocional y no afecta al bienestar físico.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación efectiva busca que el receptor interprete exactamente lo que el emisor desea transmitir.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El ruido en la comunicación siempre es externo al proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La retroalimentación no es un componente esencial del proceso comunicativo.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa requiere atención plena y reconocimiento de la comunicación no verbal.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El canal de comunicación hace referencia al contenido del mensaje.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El lenguaje corporal tiene un papel menor que el lenguaje verbal en la transmisión emocional.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Mirar directamente a los ojos siempre se interpreta como una señal positiva.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Una sonrisa genuina se caracteriza por la activación de músculos alrededor de los ojos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "En la comunicación pública, una actitud relajada y empática mejora la conexión con la audiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Usar muletillas mejora la fluidez del discurso en público.",
+    "respuesta": false
+  }
+]

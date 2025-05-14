@@ -1,0 +1,82 @@
+[
+  {
+    "pregunta": "Las emociones básicas tienen expresiones faciales universales.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las emociones sociales son fáciles de identificar en cualquier cultura.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Según Kleinginna & Kleinginna, la emoción implica componentes subjetivos, fisiológicos y conductuales.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La inteligencia se define únicamente como la capacidad de resolver problemas matemáticos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Thorndike definía la inteligencia como la capacidad de emitir respuestas objetivas.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Howard Gardner defendía una única inteligencia general aplicable a todas las personas.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El modelo de Gardner incluye inteligencias como la interpersonal y la musical.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La definición de inteligencia de Sternberg incluye la capacidad de adaptarse, seleccionar y modificar el entorno.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Spearman propuso la existencia de un factor g, o inteligencia general.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Binet creía que la inteligencia se componía de múltiples aptitudes independientes.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La inteligencia A hace referencia al rendimiento en tests de CI.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La inteligencia B representa las capacidades desarrolladas por experiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El modelo de Cattell diferencia entre inteligencia fluida y cristalizada.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La inteligencia fluida se basa en el conocimiento adquirido a lo largo de la vida.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "El modelo de Sternberg se denomina triárquico e incluye componentes analíticos, creativos y prácticos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las metáforas biológicas de la inteligencia aluden a la actividad cerebral y su eficiencia.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las inteligencias múltiples de Gardner se fundamentan en una perspectiva biopsicológica.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El modelo de Guilford se compone de 120 habilidades basadas en operaciones, productos y contenidos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Las técnicas de EEG y TEP se usan para evaluar el CI a través de respuestas verbales.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Los modelos de sistemas consideran la interacción entre individuo y contexto cultural.",
+    "respuesta": true
+  }
+]
