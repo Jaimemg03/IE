@@ -34,10 +34,19 @@
       throw new Error("No se ha seleccionado ningún archivo JSON.");
     }
 
-    fetch(`test_temas_${numeroArchivoJson}.json`) // Modifica la ruta según sea necesario
-      .then(response => response.json())
+    fetch(`test_tema_${numeroArchivoJson}.json`) // Modifica la ruta según sea necesario
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
+        }
+        return response.json();
+      })
       .then(data => {
         todasLasPreguntas = data;
+      })
+      .catch(error => {
+        alert("No se pudo cargar el archivo JSON. Verifica que el archivo existe y es válido.");
+        console.error(error);
       });
 
     function generarPreguntas() {
