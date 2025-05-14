@@ -30,7 +30,7 @@ Para ejecutar este programa, necesitas:
 - Un navegador web moderno (Google Chrome, Mozilla Firefox, etc.).
 - Un servidor local para cargar los archivos JSON (puedes usar extensiones como "Live Server" en Visual Studio Code).
 
-o bien utilizar el enlace a github Pages de este mismo repositorio [Click here]()
+o bien utilizar el enlace a github Pages de este mismo repositorio [Click here](jaimemg03.github.io/IE/)
 
 ## Instalación y Uso
 
