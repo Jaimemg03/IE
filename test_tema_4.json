@@ -1,0 +1,42 @@
+[
+  {
+    "pregunta": "La comunicación social implica la transmisión de información entre individuos en un contexto determinado.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La comunicación verbal es la única forma efectiva de expresar emociones en contextos sociales.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La escucha activa requiere atención plena y comprensión empática del mensaje del otro.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El lenguaje corporal no tiene impacto en la comunicación interpersonal.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación asertiva permite expresar opiniones sin agredir ni someterse.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La retroalimentación en la comunicación debe ser específica, clara y constructiva.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La comunicación pasiva implica la defensa clara de los propios derechos.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La comunicación agresiva se caracteriza por una actitud impositiva y dominante.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La congruencia entre lo verbal y lo no verbal favorece una comunicación más efectiva.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "En la comunicación empática no es necesario comprender los sentimientos del otro.",
+    "respuesta": false
+  }
+]

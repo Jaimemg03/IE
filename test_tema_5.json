@@ -1,0 +1,42 @@
+[
+  {
+    "pregunta": "El pensamiento positivo ayuda a reinterpretar las situaciones desde una perspectiva optimista.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "La empatía se refiere a la capacidad de sentir exactamente lo mismo que siente otra persona.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Existen tres componentes principales de la empatía: cognitiva, emocional y conductual.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento positivo implica negar sistemáticamente los aspectos negativos de la realidad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La empatía cognitiva implica comprender la perspectiva del otro sin necesariamente compartir su emoción.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Practicar la gratitud regularmente contribuye al bienestar emocional.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento positivo no tiene evidencia científica en relación al bienestar psicológico.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "La empatía emocional se basa en compartir los sentimientos de otra persona de forma automática.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "El pensamiento positivo reduce la resiliencia frente a la adversidad.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "Una actitud empática favorece relaciones interpersonales más saludables.",
+    "respuesta": true
+  }
+]
