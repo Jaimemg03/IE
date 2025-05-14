@@ -38,7 +38,7 @@ async function cargarPreguntas() {
 
   const numerosArchivos = Array.from(archivosSeleccionados);
   const promesas = numerosArchivos.map(numero =>
-    fetch(`test_tema_${numero}.json`) // Modifica la ruta según sea necesario
+    fetch(`./test_tema_${numero}.json`) // Modifica la ruta según sea necesario
       .then(response => {
         if (!response.ok) {
           throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
