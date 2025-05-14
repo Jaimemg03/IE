@@ -1,102 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test de Inteligencia Emocional</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Roboto', sans-serif;
-      padding: 20px;
-      background: linear-gradient(135deg, #74ebd5, #acb6e5);
-      color: #333;
-      margin: 0;
-    }
-
-    h1 {
-      text-align: center;
-      color: #fff;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    }
-
-    label {
-      font-size: 1.1rem;
-      color: #fff;
-    }
-
-    input[type="number"] {
-      padding: 10px;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-left: 10px;
-      width: 80px;
-    }
-
-    .boton {
-      display: inline-block;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      padding: 10px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .boton:hover {
-      background-color: #45a049;
-    }
-
-    .pregunta {
-      margin-bottom: 20px;
-      background: #fff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    .pregunta p {
-      font-size: 1.2rem;
-      margin-bottom: 10px;
-    }
-
-    .correcta {
-      background-color: #d4edda;
-      border-left: 5px solid #28a745;
-    }
-
-    .incorrecta {
-      background-color: #f8d7da;
-      border-left: 5px solid #dc3545;
-    }
-
-    #resultado {
-      font-weight: bold;
-      margin-top: 20px;
-      font-size: 1.5rem;
-      text-align: center;
-      color: #fff;
-    }
-
-    #contenedorBotones {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    #contenedorBotones .boton {
-      margin: 5px;
-    }
-
-    form {
-      max-width: 800px;
-      margin: 0 auto;
-    }
+    body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f3; }
+    .pregunta { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
+    .boton { margin: 15px 0; padding: 10px 15px; font-size: 16px; }
+    .correcta { background-color: #d4edda; }
+    .incorrecta { background-color: #f8d7da; }
+    #resultado { font-weight: bold; margin-top: 20px; font-size: 18px; }
   </style>
 </head>
 <body>
@@ -105,7 +19,6 @@
   <input type="number" id="cantidad" min="1" max="100" value="10">
   <button onclick="generarPreguntas()" class="boton">Generar preguntas</button>
 
-  <div id="contenedorBotones"></div>
   <form id="formulario"></form>
   <button onclick="corregir()" class="boton">Corregir respuestas</button>
   <div id="resultado"></div>
