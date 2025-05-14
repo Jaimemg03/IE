@@ -26,8 +26,15 @@
   <script>
     let todasLasPreguntas = [];
     let preguntasSeleccionadas = [];
+    let numeroArchivoJson = 0;
 
-    fetch("test_temas_1_2.json")
+    numeroArchivoJson = parseInt(prompt("Selecciona el número del archivo JSON (1-7):"));
+
+    if (numeroArchivoJson === 0) {
+      throw new Error("No se ha seleccionado ningún archivo JSON.");
+    }
+
+    fetch('test_temas_${numeroArchivoJson}.json') // Modifica la ruta según sea necesario
       .then(response => response.json())
       .then(data => {
         todasLasPreguntas = data;
