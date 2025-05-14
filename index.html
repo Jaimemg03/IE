@@ -34,7 +34,7 @@
       throw new Error("No se ha seleccionado ningún archivo JSON.");
     }
 
-    fetch('test_temas_${numeroArchivoJson}.json') // Modifica la ruta según sea necesario
+    fetch(`test_temas_${numeroArchivoJson}.json`) // Modifica la ruta según sea necesario
       .then(response => response.json())
       .then(data => {
         todasLasPreguntas = data;
