@@ -12,7 +12,7 @@ Este proyecto es una herramienta interactiva diseñada para el **estudio de la i
 ## Estructura del Proyecto
 
 El proyecto está organizado de la siguiente manera:
-
+```
 /src 
   ├── index.html # Estructura principal de la aplicación 
   ├── script.js # Lógica del programa 
@@ -21,6 +21,7 @@ El proyecto está organizado de la siguiente manera:
   ├── test_tema_1.json # Preguntas del tema 1 
   ├── test_tema_2.json # Preguntas del tema 2 
   ├── ... # Otros archivos de preguntas
+```
 
 ## Requisitos
 
@@ -28,6 +29,8 @@ Para ejecutar este programa, necesitas:
 
 - Un navegador web moderno (Google Chrome, Mozilla Firefox, etc.).
 - Un servidor local para cargar los archivos JSON (puedes usar extensiones como "Live Server" en Visual Studio Code).
+
+o bien utilizar el enlace a github Pages de este mismo repositorio [Click here]()
 
 ## Instalación y Uso
 
