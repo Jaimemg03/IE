@@ -107,4 +107,19 @@ function corregir() {
 
   const resultado = document.getElementById("resultado");
   resultado.textContent = `Has acertado ${correctas} de ${preguntasSeleccionadas.length} preguntas.`;
+  resultado.style.display = "block";
+  resultado.style.color = correctas >= preguntasSeleccionadas.length/2 ? "green" : "red";
+  resultado.style.fontWeight = "bold";
+  resultado.style.fontSize = "20px";
+  resultado.style.marginTop = "20px";
+  resultado.style.textAlign = "center";
+  resultado.style.padding = "10px";
+  resultado.style.border = "2px solid " + (correctas >= preguntasSeleccionadas.length/2 ? "green" : "red");
+  resultado.style.borderRadius = "5px";
+  resultado.style.backgroundColor = correctas >= preguntasSeleccionadas.length/2 ? "#d4edda" : "#f8d7da";
+  resultado.style.width = "50%";
+  resultado.style.margin = "0 auto";
+  resultado.style.boxSizing = "border-box";
+  resultado.style.transition = "all 0.3s ease";
+  resultado.style.opacity = "1";
 }
