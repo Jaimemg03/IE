@@ -8,9 +8,12 @@
 <body>
   <h1>Test de Inteligencia Emocional</h1>
   <label for="cantidad">¿Cuántas preguntas deseas responder? (máx: 100)</label>
-  <input type="number" id="cantidad" min="1" max="100" value="10">
+  <input type="number" id="cantidad" min="1" max="100" value="30">
+  <br>
   <button onclick="generarPreguntas()" class="boton">Generar preguntas</button>
-
+  <br>
+  <label>Seleccione los temas a incluir:</label>
+  
   <form id="formulario"></form>
   <button onclick="corregir()" class="boton">Corregir respuestas</button>
   <div id="resultado"></div>
