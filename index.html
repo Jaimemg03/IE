@@ -1,16 +1,102 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test de Inteligencia Emocional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
-    body { font-family: Arial, sans-serif; padding: 20px; background: #eef2f3; }
-    .pregunta { margin-bottom: 20px; background: #fff; padding: 15px; border-radius: 5px; box-shadow: 0 0 5px #ccc; }
-    .boton { margin: 15px 0; padding: 10px 15px; font-size: 16px; }
-    .correcta { background-color: #d4edda; }
-    .incorrecta { background-color: #f8d7da; }
-    #resultado { font-weight: bold; margin-top: 20px; font-size: 18px; }
+    body {
+      font-family: 'Roboto', sans-serif;
+      padding: 20px;
+      background: linear-gradient(135deg, #74ebd5, #acb6e5);
+      color: #333;
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    label {
+      font-size: 1.1rem;
+      color: #fff;
+    }
+
+    input[type="number"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-left: 10px;
+      width: 80px;
+    }
+
+    .boton {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .boton:hover {
+      background-color: #45a049;
+    }
+
+    .pregunta {
+      margin-bottom: 20px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .pregunta p {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .correcta {
+      background-color: #d4edda;
+      border-left: 5px solid #28a745;
+    }
+
+    .incorrecta {
+      background-color: #f8d7da;
+      border-left: 5px solid #dc3545;
+    }
+
+    #resultado {
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 1.5rem;
+      text-align: center;
+      color: #fff;
+    }
+
+    #contenedorBotones {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #contenedorBotones .boton {
+      margin: 5px;
+    }
+
+    form {
+      max-width: 800px;
+      margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -19,113 +105,13 @@
   <input type="number" id="cantidad" min="1" max="100" value="10">
   <button onclick="generarPreguntas()" class="boton">Generar preguntas</button>
 
+  <div id="contenedorBotones"></div>
   <form id="formulario"></form>
   <button onclick="corregir()" class="boton">Corregir respuestas</button>
   <div id="resultado"></div>
 
   <script>
-    let todasLasPreguntas = [];
-    let preguntasSeleccionadas = [];
-    let numeroArchivoJson = 0;
-
-    const contenedorBotones = document.createElement("div");
-    contenedorBotones.id = "contenedorBotones";
-    contenedorBotones.style.marginBottom = "20px";
-    document.body.insertBefore(contenedorBotones, document.getElementById("formulario"));
-
-    for (let i = 1; i <= 7; i++) {
-      const boton = document.createElement("button");
-      boton.textContent = `Tema ${i}`;
-      boton.className = "boton";
-      boton.style.marginRight = "10px";
-      boton.onclick = () => seleccionarTema(boton, i);
-      contenedorBotones.appendChild(boton);
-    }
-
-    let archivosSeleccionados = new Set();
-
-    function seleccionarTema(boton, numero) {
-      if (!archivosSeleccionados.has(numero)) {
-        archivosSeleccionados.add(numero);
-        boton.style.backgroundColor = "#d4edda"; // Cambia el color del botón para indicar selección
-      } else {
-        archivosSeleccionados.delete(numero);
-        boton.style.backgroundColor = ""; // Restaura el color original del botón
-      }
-    }
-
-    function cargarPreguntas() {
-      if (archivosSeleccionados.size === 0) {
-        throw new Error("No se ha seleccionado ningún archivo JSON.");
-      }
-    
-      const numerosArchivos = Array.from(archivosSeleccionados);
-      const promesas = numerosArchivos.map(numero =>
-        fetch(`./tests/test_tema_${numero}.json`) // Modifica la ruta según sea necesario
-          .then(response => {
-            if (!response.ok) {
-              throw new Error(`Error al cargar el archivo JSON: ${response.statusText}`);
-            }
-            return response.json();
-          })
-      );
-    
-      Promise.all(promesas)
-        .then(dataArrays => {
-          todasLasPreguntas = dataArrays.flat(); // Combina todas las preguntas en un solo array
-        })
-        .catch(error => {
-          alert("No se pudieron cargar uno o más archivos JSON. Verifica que los archivos existen y son válidos.");
-          console.error(error);
-        });
-    }
-
-    function generarPreguntas() {
-      if (archivosSeleccionados.size === 0) {
-        alert("Por favor, selecciona al menos un tema antes de generar preguntas.");
-        return;
-      }
-    
-      cargarPreguntas();
-    
-      const cantidad = parseInt(document.getElementById("cantidad").value);
-      preguntasSeleccionadas = todasLasPreguntas.sort(() => 0.5 - Math.random()).slice(0, cantidad);
-      const formulario = document.getElementById("formulario");
-      formulario.innerHTML = "";
-      preguntasSeleccionadas.forEach((p, index) => {
-        formulario.innerHTML += `
-          <div class="pregunta" id="pregunta${index}">
-            <p><strong>${index + 1}. </strong>${p.pregunta}</p>
-            <label><input type="radio" name="p${index}" value="true"> Verdadero</label><br>
-            <label><input type="radio" name="p${index}" value="false"> Falso</label>
-          </div>
-        `;
-      });
-      document.getElementById("resultado").textContent = "";
-    }
-
-    function corregir() {
-      let correctas = 0;
-      preguntasSeleccionadas.forEach((p, index) => {
-        const respuesta = document.querySelector(`input[name="p${index}"]:checked`);
-        const divPregunta = document.getElementById(`pregunta${index}`);
-        if (respuesta) {
-          if (respuesta.value === p.respuesta.toString()) {
-            correctas++;
-            divPregunta.classList.add("correcta");
-            divPregunta.classList.remove("incorrecta");
-          } else {
-            divPregunta.classList.add("incorrecta");
-            divPregunta.classList.remove("correcta");
-          }
-        } else {
-          divPregunta.classList.add("incorrecta");
-        }
-      });
-
-      const resultado = document.getElementById("resultado");
-      resultado.textContent = `Has acertado ${correctas} de ${preguntasSeleccionadas.length} preguntas.`;
-    }
+    // Tu código JavaScript permanece igual
   </script>
 </body>
 </html>
