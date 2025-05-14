@@ -28,7 +28,31 @@
     let preguntasSeleccionadas = [];
     let numeroArchivoJson = 0;
 
-    const archivosSeleccionados = prompt("Selecciona los números de los archivos JSON separados por comas (ejemplo: 1,2,3):");
+      const contenedorBotones = document.createElement("div");
+      contenedorBotones.id = "contenedorBotones";
+      contenedorBotones.style.marginBottom = "20px";
+      document.body.insertBefore(contenedorBotones, document.getElementById("formulario"));
+
+      for (let i = 1; i <= 7; i++) {
+        const boton = document.createElement("button");
+        boton.textContent = `Tema ${i}`;
+        boton.className = "boton";
+        boton.style.marginRight = "10px";
+        boton.onclick = () => seleccionarTema(i);
+        contenedorBotones.appendChild(boton);
+      }
+
+      let archivosSeleccionados = "";
+
+      function seleccionarTema(numero) {
+        if (!archivosSeleccionados.includes(numero.toString())) {
+        archivosSeleccionados += archivosSeleccionados ? `,${numero}` : `${numero}`;
+        alert(`Tema ${numero} seleccionado.`);
+        } else {
+        alert(`El tema ${numero} ya está seleccionado.`);
+        }
+      }
+
 
     if (!archivosSeleccionados) {
       throw new Error("No se ha seleccionado ningún archivo JSON.");
