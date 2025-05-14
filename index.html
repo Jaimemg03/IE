@@ -78,6 +78,8 @@
           alert("No se pudieron cargar uno o más archivos JSON. Verifica que los archivos existen y son válidos.");
           console.error(error);
         });
+    }
+
     function generarPreguntas() {
       if (archivosSeleccionados.size === 0) {
         alert("Por favor, selecciona al menos un tema antes de generar preguntas.");
@@ -99,8 +101,6 @@
           </div>
         `;
       });
-      document.getElementById("resultado").textContent = "";
-    }
       document.getElementById("resultado").textContent = "";
     }
 
