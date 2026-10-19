@@ -1,0 +1,602 @@
+[
+  {
+    "pregunta": "¿Cuál es el objetivo de la revisión del sprint?",
+    "opciones": [
+      "Mejorar el proceso",
+      "Presentar el producto",
+      "Refinar la pila del producto",
+      "Inspeccionar y mejorar el producto"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Quiénes deben participar en la retrospectiva?",
+    "opciones": [
+      "El equipo y el ScrumMaster",
+      "El equipo, el ScrumMaster y el dueño del producto",
+      "El equipo y el dueño del producto",
+      "El ScrumMaster y el dueño del producto"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la principal función del ScrumMaster?",
+    "opciones": [
+      "Formar al equipo y al dueño del producto en Scrum",
+      "Ninguna de las otras es cierta",
+      "Dirigir al equipo",
+      "Hacer que se sigan las buenas prácticas de Scrum"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre la reunión de Scrum diario no es cierta?",
+    "opciones": [
+      "No deben acudir jefes ni gerentes",
+      "El equipo informa al ScrumMaster",
+      "Se celebra a una hora prefijada",
+      "No hay discusiones"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "En la planificación del sprint, el equipo, basándose en su velocidad histórica, se da cuenta de que se ha comprometido con demasiados elementos de la pila de producto para el próximo Sprint. ¿Qué debería hacer el equipo?",
+    "opciones": [
+      "Pedir al dueño del producto que acepte una calidad inferior o una definición de \"terminado\" menos estricta",
+      "Comprometerse con todos los elementos y confiar en que podrán trabajar horas extras",
+      "Extender la duración del Sprint para acomodar todos los elementos comprometidos",
+      "Remover los elementos de la pila de menor prioridad hasta que la carga de trabajo sea realista para el Sprint"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Quiénes pueden asistir a la revisión de sprint?",
+    "opciones": [
+      "El equipo, el ScrumMaster y el dueño del producto",
+      "El ScrumMaster y el cliente",
+      "El equipo, el ScrumMaster, el dueño del producto y el cliente",
+      "El equipo y el ScrumMaster"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Quién selecciona los elementos de la pila de producto que se realizarán en un sprint?",
+    "opciones": [
+      "El dueño del producto",
+      "El ScrumMaster",
+      "El equipo",
+      "El manager"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Cómo se prioriza la pila del producto?",
+    "opciones": [
+      "Intentando maximizar el retorno de la inversión",
+      "Intentando priorizar las funcionalidades sobre las cuestiones técnicas",
+      "Intentando maximizar el número de funcionalidades desarrolladas",
+      "Intentando minimizar el número de sprints necesarios"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "A mitad del sprint, el dueño del producto recibe una información que exige un cambio urgente en la prioridad de un ítem que NO está actualmente en la pila del sprint. ¿Cuál es la acción más apropiada para el dueño del producto?",
+    "opciones": [
+      "Evaluar si el cambio es tan significativo que requiere la cancelación del sprint actual, o si puede esperar al próximo sprint para incluirlo en la pila del sprint",
+      "Agregar inmediatamente el nuevo ítem a la pila de sprint actual, pidiendo al equipo que lo acomode",
+      "Convocar una reunión de emergencia con los interesados para discutir el cambio",
+      "Intercambiar el nuevo ítem por uno de tamaño similar que esté en la pila del sprint"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Durante la reunión diaria, un desarrollador menciona que está bloqueado porque una API externa necesaria no está disponible y lleva dos días esperando. ¿Cuál es la mejor solución en el marco de Scrum?",
+    "opciones": [
+      "El ScrumMaster debe tomar la iniciativa para remover el impedimento, facilitando la comunicación con el proveedor externo",
+      "El desarrollador debe esperar hasta la Retrospectiva del Sprint para plantear el problema formalmente",
+      "El equipo de desarrollo debe resolver el impedimento por sí mismo, ya que son autoorganizados",
+      "Pedirle al dueño del producto que priorice la API en la pila del producto"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un Sprint en Scrum?",
+    "opciones": [
+      "Una reunión diaria de seguimiento de 15 minutos",
+      "Un periodo de tiempo fijo (time-box) de un mes o menos en el que se crea un incremento de producto",
+      "Una fase de documentación al final del proyecto",
+      "Una lista priorizada de requisitos del producto"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el propósito principal de la reunión diaria (Daily Scrum)?",
+    "opciones": [
+      "Informar al jefe del progreso individual de cada persona",
+      "Revisar el presupuesto del proyecto",
+      "Inspeccionar el progreso hacia el objetivo del Sprint y adaptar el plan de trabajo",
+      "Priorizar la pila de producto"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Qué es la pila de producto (Product Backlog)?",
+    "opciones": [
+      "La lista ordenada de todo lo que se conoce que es necesario para mejorar el producto",
+      "El conjunto de tareas del Sprint actual",
+      "La lista de impedimentos pendientes",
+      "El documento de arquitectura del sistema"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es la pila del Sprint (Sprint Backlog)?",
+    "opciones": [
+      "La lista completa de requisitos del producto",
+      "El registro de errores del producto",
+      "El plan del equipo para el Sprint, compuesto por el objetivo del Sprint y los elementos seleccionados",
+      "La lista de personas asignadas al proyecto"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Quién es responsable de gestionar y ordenar la pila de producto?",
+    "opciones": [
+      "El ScrumMaster",
+      "El equipo de desarrollo",
+      "Los interesados (stakeholders)",
+      "El dueño del producto (Product Owner)"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Qué rol representa los intereses de los interesados y se encarga de maximizar el valor del producto?",
+    "opciones": [
+      "El ScrumMaster",
+      "El dueño del producto (Product Owner)",
+      "El equipo de desarrollo",
+      "El director de proyecto"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la duración máxima recomendada de un Sprint?",
+    "opciones": [
+      "Una semana",
+      "Dos semanas",
+      "Un mes",
+      "Un trimestre"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Cuál es el propósito de la retrospectiva del Sprint?",
+    "opciones": [
+      "Mostrar el incremento terminado a los interesados",
+      "Inspeccionar el último Sprint y planificar mejoras para el siguiente",
+      "Priorizar la pila de producto",
+      "Estimar el presupuesto del siguiente Sprint"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Para qué sirve el objetivo del Sprint (Sprint Goal)?",
+    "opciones": [
+      "Proporcionar una guía sobre por qué el Sprint es valioso",
+      "Detallar todas las tareas diarias del equipo",
+      "Definir el presupuesto del Sprint",
+      "Seleccionar a los miembros del equipo"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un incremento en Scrum?",
+    "opciones": [
+      "El número de horas trabajadas durante el Sprint",
+      "Un documento con las lecciones aprendidas",
+      "La suma del trabajo completado que añade valor y es potencialmente desplegable",
+      "La lista de tareas pendientes del equipo"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Cuánto tiempo debe durar como máximo la reunión diaria (Daily Scrum)?",
+    "opciones": [
+      "15 minutos",
+      "30 minutos",
+      "Una hora",
+      "No tiene límite prefijado"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuáles son los tres pilares empíricos en los que se basa Scrum?",
+    "opciones": [
+      "Planificación, ejecución y cierre",
+      "Transparencia, inspección y adaptación",
+      "Análisis, diseño y desarrollo",
+      "Alcance, tiempo y coste"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes NO es un pilar de Scrum?",
+    "opciones": [
+      "Transparencia",
+      "Inspección",
+      "Adaptación",
+      "Documentación exhaustiva"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Qué es la \"definición de terminado\" (Definition of Done)?",
+    "opciones": [
+      "La fecha de finalización del proyecto",
+      "La lista de reuniones obligatorias",
+      "Un acuerdo compartido sobre las condiciones que debe cumplir un incremento para considerarse completado",
+      "El contrato firmado con el cliente"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "En Scrum, ¿quién es el principal responsable de eliminar los impedimentos que afectan al equipo?",
+    "opciones": [
+      "El dueño del producto",
+      "El cliente",
+      "El ScrumMaster",
+      "El comité de dirección"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿En qué artefacto se recogen los elementos que el equipo se compromete a completar durante el Sprint?",
+    "opciones": [
+      "La pila de producto",
+      "La pila del Sprint (Sprint Backlog)",
+      "El incremento",
+      "La definición de terminado"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué significa el término \"time-box\" en Scrum?",
+    "opciones": [
+      "Un periodo de tiempo fijo máximo en el que se realiza un evento de Scrum",
+      "Una herramienta para medir la velocidad del equipo",
+      "Un tipo de contrato con el cliente",
+      "Un documento que recoge los requisitos"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Quién es la única persona que puede cancelar un Sprint?",
+    "opciones": [
+      "El equipo de desarrollo por mayoría",
+      "El cliente mediante contrato",
+      "El ScrumMaster",
+      "El dueño del producto (Product Owner)"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Qué es la \"velocidad\" (velocity) de un equipo Scrum?",
+    "opciones": [
+      "El número de reuniones que se celebran por semana",
+      "La cantidad media de trabajo que el equipo completa por Sprint",
+      "El tiempo que tarda el ScrumMaster en resolver impedimentos",
+      "El número de errores corregidos en cada Sprint"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué implica que el equipo de desarrollo sea autoorganizado?",
+    "opciones": [
+      "Que decide internamente cómo realizar su trabajo",
+      "Que no necesita un dueño del producto",
+      "Que puede cambiar libremente el alcance del Sprint",
+      "Que no rinde cuentas ante nadie"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un evento de Scrum?",
+    "opciones": [
+      "La reunión de seguimiento semanal",
+      "La planificación del Sprint (Sprint Planning)",
+      "La revisión de código entre compañeros",
+      "La reunión de dirección mensual"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes NO es una reunión o evento de Scrum?",
+    "opciones": [
+      "Planificación del Sprint",
+      "Scrum Diario",
+      "Revisión del Sprint",
+      "Reunión de seguimiento con el cliente"
+    ],
+    "respuesta": 3
+  },
+  {
+    "pregunta": "¿Quién participa en la planificación del Sprint?",
+    "opciones": [
+      "Únicamente el dueño del producto",
+      "Únicamente el equipo de desarrollo",
+      "Todo el equipo Scrum: equipo de desarrollo, ScrumMaster y dueño del producto",
+      "El ScrumMaster y los interesados"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Qué es el ScrumMaster?",
+    "opciones": [
+      "El jefe del equipo de desarrollo",
+      "Un rol que ayuda a que Scrum se entienda y se aplique correctamente",
+      "El responsable de priorizar la pila de producto",
+      "El representante del cliente dentro del equipo"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es el resultado principal de la revisión del Sprint?",
+    "opciones": [
+      "Un informe de errores del producto",
+      "Un incremento terminado que es inspeccionado y una pila de producto adaptada",
+      "La lista de tareas del siguiente Sprint",
+      "El presupuesto aprobado del proyecto"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué se revisa durante la retrospectiva del Sprint?",
+    "opciones": [
+      "El incremento de producto",
+      "El presupuesto del proyecto",
+      "Cómo fue el Sprint en cuanto a personas, relaciones, procesos y herramientas",
+      "La pila de producto"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Cuál es el resultado esperado de la retrospectiva?",
+    "opciones": [
+      "Una lista de mejoras accionables que el equipo puede aplicar",
+      "Un incremento de producto terminado",
+      "Un nuevo objetivo del Sprint",
+      "La cancelación del Sprint"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "En Scrum, ¿cómo se estima habitualmente el esfuerzo de los elementos de la pila de producto?",
+    "opciones": [
+      "En horas exactas de trabajo",
+      "En puntos de historia o tallas relativas, a menudo mediante planning poker",
+      "En euros",
+      "En número de líneas de código"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué es el planning poker?",
+    "opciones": [
+      "Una técnica de estimación en grupo basada en el consenso del equipo",
+      "Un juego para decidir el orden de las tareas",
+      "Una reunión para revisar el incremento",
+      "Una herramienta de gestión de errores"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué muestra el gráfico de burn-down?",
+    "opciones": [
+      "El dinero gastado por Sprint",
+      "El trabajo restante frente al tiempo durante un Sprint",
+      "El número de errores abiertos",
+      "La velocidad del equipo por persona"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué es el burn-up chart?",
+    "opciones": [
+      "Un gráfico que muestra el trabajo completado y el alcance total a lo largo del tiempo",
+      "Un gráfico de gastos del proyecto",
+      "Una lista de impedimentos",
+      "Un informe de calidad del código"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un valor de Scrum?",
+    "opciones": [
+      "Competitividad",
+      "Coraje",
+      "Individualismo",
+      "Jerarquía"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuáles de los siguientes son valores de Scrum?",
+    "opciones": [
+      "Compromiso, foco, apertura, respeto y coraje",
+      "Rapidez, eficiencia y calidad",
+      "Alcance, plazo y coste",
+      "Liderazgo, control y supervisión"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Un miembro del equipo no está de acuerdo con cómo el dueño del producto ha priorizado un ítem de la pila. ¿Cuál es la actitud más adecuada?",
+    "opciones": [
+      "Negarse a implementarlo",
+      "Hablarlo con el dueño del producto y aportar argumentos, respetando que él es responsable del orden de la pila",
+      "Escalarlo directamente al jefe de proyecto",
+      "Ignorarlo y no implementarlo"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "El equipo de desarrollo termina todas las tareas planificadas antes de que acabe el Sprint. ¿Qué debería hacer?",
+    "opciones": [
+      "Celebrarlo y no hacer nada más hasta el siguiente Sprint",
+      "Colaborar con el dueño del producto para seleccionar el siguiente ítem de mayor valor de la pila de producto",
+      "Añadir errores y funcionalidades no planificadas por su cuenta",
+      "Ampliar la duración del Sprint"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "Durante el Sprint, ¿puede cambiar el alcance de la pila del Sprint?",
+    "opciones": [
+      "Sí, cualquier persona puede modificarla en cualquier momento",
+      "No, la pila del Sprint es totalmente inmutable",
+      "Sí, el equipo puede renegociar y ajustar su plan siempre que proteja el objetivo del Sprint",
+      "Solo si lo autoriza el cliente mediante contrato"
+    ],
+    "respuesta": 2
+  },
+  {
+    "pregunta": "¿Qué papel tiene el dueño del producto en la reunión de revisión del Sprint?",
+    "opciones": [
+      "Decide cómo implementar cada tarea",
+      "Explica qué elementos de la pila se han completado y cuáles no, e invita a los interesados a inspeccionar el incremento",
+      "Corrige los errores técnicos del incremento",
+      "Dirige al equipo durante la demostración"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué es una épica (epic) en Scrum?",
+    "opciones": [
+      "Una unidad de trabajo muy grande que puede dividirse en elementos más pequeños de la pila",
+      "Una reunión de planificación",
+      "Un defecto crítico",
+      "Un tipo especial de Sprint"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es una historia de usuario?",
+    "opciones": [
+      "Una descripción breve de una funcionalidad contada desde la perspectiva del usuario",
+      "El historial de cambios del código",
+      "Un documento contractual con el cliente",
+      "Un informe de errores"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "El equipo decide que un elemento de la pila es demasiado grande para un Sprint. ¿Qué es lo más adecuado?",
+    "opciones": [
+      "Añadirlo igualmente y esperar a terminarlo en varios Sprints",
+      "Dividirlo en elementos más pequeños que puedan completarse dentro de un Sprint",
+      "Pedir al dueño del producto que lo elimine",
+      "Extender la duración del Sprint indefinidamente"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué ocurre si el objetivo del Sprint se vuelve obsoleto?",
+    "opciones": [
+      "El equipo continúa igualmente hasta terminarlo",
+      "El dueño del producto puede cancelar el Sprint y se revisa lo realizado",
+      "Se amplía el Sprint para hacerlo relevante",
+      "El ScrumMaster decide un nuevo objetivo sin consultar"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuál es la responsabilidad del equipo de desarrollo respecto al incremento?",
+    "opciones": [
+      "Asegurarse de que cada incremento cumple la definición de terminado",
+      "Obtener la aprobación del cliente antes de cada entrega",
+      "Documentar cada línea de código",
+      "Convertir el incremento en un contrato"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Durante la revisión del Sprint, un interesado pide una nueva funcionalidad no planificada. ¿Qué es lo más apropiado?",
+    "opciones": [
+      "El equipo la implementa inmediatamente",
+      "Registrarla como candidata y que el dueño del producto decida si la incluye y en qué orden en la pila de producto",
+      "El ScrumMaster la rechaza por norma",
+      "Cancelar el Sprint"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "Un nuevo miembro se incorpora al equipo a mitad de Sprint. ¿Qué es lo más correcto?",
+    "opciones": [
+      "Reasignar y renegociar el plan del Sprint según sea necesario, manteniendo el objetivo del Sprint",
+      "Cancelar el Sprint y empezar de nuevo",
+      "Ignorar al nuevo miembro hasta el siguiente Sprint",
+      "Ampliar el Sprint para que se ponga al día"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la función del dueño del producto respecto al objetivo del Sprint?",
+    "opciones": [
+      "Fijarlo unilateralmente sin consultar al equipo",
+      "Colaborar con el equipo para definir un objetivo claro y valioso",
+      "Cambiarlo cada día según convenga",
+      "Delegarlo por completo en el ScrumMaster"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué es Scrum según la guía oficial?",
+    "opciones": [
+      "Una metodología rígida con fases secuenciales",
+      "Un marco de trabajo ligero para abordar problemas complejos de forma adaptativa y generar valor",
+      "Una herramienta software de gestión de proyectos",
+      "Un tipo de contrato de desarrollo de software"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Cuáles son los tres artefactos de Scrum?",
+    "opciones": [
+      "Pila de producto, pila del Sprint e incremento",
+      "Sprint, Scrum Diario y revisión",
+      "Emisor, mensaje y receptor",
+      "Dueño del producto, ScrumMaster y equipo"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuáles son los roles (responsabilidades) que forman el equipo Scrum?",
+    "opciones": [
+      "Analista, programador y tester",
+      "Dueño del producto, ScrumMaster y desarrolladores",
+      "Jefe de proyecto, cliente y proveedor",
+      "Arquitecto, líder técnico y becario"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "¿Qué significa la transparencia como pilar de Scrum?",
+    "opciones": [
+      "Que todos los implicados tengan visión del trabajo y de los artefactos que lo describen",
+      "Que el código fuente sea siempre público",
+      "Que el cliente no intervenga en el proyecto",
+      "Que el equipo trabaje sin reuniones"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cómo se relaciona Scrum con el manifiesto ágil?",
+    "opciones": [
+      "Scrum se basa en los valores y principios del desarrollo ágil",
+      "Scrum contradice los principios ágiles",
+      "Scrum es una alternativa opuesta a lo ágil",
+      "No tienen ninguna relación entre sí"
+    ],
+    "respuesta": 0
+  }
+]

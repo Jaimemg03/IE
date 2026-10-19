@@ -1,36 +1,82 @@
-# Test de Inteligencia Emocional
+# Test de autoevaluación
 
-Este proyecto es una herramienta interactiva diseñada para el **estudio de la inteligencia emocional**, desarrollada como parte de la asignatura de **Inteligencia Emocional** del grado de Ingeniería Informática en la **Universidad de La Laguna**. El programa permite a los estudiantes practicar y evaluar sus conocimientos sobre diversos temas relacionados con la inteligencia emocional mediante un cuestionario dinámico y personalizable.
+Este proyecto es una herramienta interactiva diseñada para el **estudio y la autoevaluación** de distintas asignaturas, desarrollada como apoyo para el grado de Ingeniería Informática en la **Universidad de La Laguna**. Permite seleccionar la asignatura, elegir los temas a practicar y generar un cuestionario dinámico y personalizable.
 
 ## Características
 
-- **Selección de Temas:** Los usuarios pueden elegir entre diferentes temas relacionados con la inteligencia emocional.
-- **Generación de Preguntas:** El programa genera un número configurable de preguntas aleatorias basadas en los temas seleccionados.
-- **Corrección Automática:** Una vez completado el cuestionario, el programa corrige las respuestas y muestra el resultado.
-- **Interfaz Intuitiva:** Diseño visual atractivo y fácil de usar, con botones interactivos y retroalimentación visual para las respuestas correctas e incorrectas.
+- **Selección de asignatura:** El usuario elige la asignatura que quiere practicar (por ejemplo, Inteligencia Emocional o Dirección y Gestión de Proyectos).
+- **Selección de temas:** Los temas mostrados se adaptan a la asignatura elegida, con opción de seleccionar todos de una vez.
+- **Generación de preguntas:** El programa genera un número configurable de preguntas aleatorias basadas en los temas seleccionados.
+- **Tipos de pregunta:** Soporta preguntas de **Verdadero/Falso** y de **opción múltiple** (a/b/c/d).
+- **Corrección automática:** Al terminar, corrige las respuestas, marca los aciertos y fallos, resalta la opción correcta y muestra la puntuación.
+- **Interfaz intuitiva:** Diseño visual atractivo y fácil de usar.
 
 ## Estructura del Proyecto
 
-El proyecto está organizado de la siguiente manera:
 ```
-/src 
-  ├── index.html # Estructura principal de la aplicación 
-  ├── script.js # Lógica del programa 
-  ├── styles.css # Estilos para la interfaz 
-/tests 
-  ├── test_tema_1.json # Preguntas del tema 1 
-  ├── test_tema_2.json # Preguntas del tema 2 
-  ├── ... # Otros archivos de preguntas
+.
+├── index.html                  # Estructura principal de la aplicación
+├── script.js                   # Lógica del programa
+├── styles.css                  # Estilos para la interfaz
+├── asignaturas.json            # Catálogo de asignaturas y temas
+└── asignaturas/
+    ├── inteligencia-emocional/
+    │   ├── test_tema_1.json
+    │   └── ...
+    └── direccion-gestion-proyectos/
+        └── test_tema_1.json
 ```
+
+## Cómo añadir una asignatura o un tema
+
+Todo se controla desde el fichero **`asignaturas.json`**:
+
+1. Crea la carpeta `asignaturas/<id-asignatura>/` y añade dentro los ficheros JSON de cada tema.
+2. Añade una entrada en `asignaturas.json` con el nombre visible y la lista de temas:
+
+```json
+{
+  "mi-asignatura": {
+    "nombre": "Mi Asignatura",
+    "temas": [
+      { "id": 1, "nombre": "Tema 1 - Introducción", "archivo": "asignaturas/mi-asignatura/test_tema_1.json" }
+    ]
+  }
+}
+```
+
+La interfaz se genera automáticamente a partir de este catálogo: no hace falta tocar `index.html` ni `script.js`.
+
+## Formato de las preguntas
+
+Cada fichero de tema es un array de preguntas. Se admiten dos formatos:
+
+**Verdadero / Falso**
+
+```json
+{ "pregunta": "Las emociones son reacciones adaptativas.", "respuesta": true }
+```
+
+**Opción múltiple**
+
+```json
+{
+  "pregunta": "¿Qué es un Sprint en Scrum?",
+  "opciones": ["...", "...", "...", "..."],
+  "respuesta": 1
+}
+```
+
+En las preguntas de opción múltiple, `respuesta` es el **índice (empezando en 0)** de la opción correcta. También se admiten la letra (`"b"`) o el texto exacto de la opción.
 
 ## Requisitos
 
-Para ejecutar este programa, necesitas:
+Para ejecutar este programa necesitas:
 
 - Un navegador web moderno (Google Chrome, Mozilla Firefox, etc.).
-- Un servidor local para cargar los archivos JSON (puedes usar extensiones como "Live Server" en Visual Studio Code).
+- Un servidor local para cargar los archivos JSON (por ejemplo la extensión "Live Server" de Visual Studio Code), ya que `fetch` no funciona abriendo el fichero directamente.
 
-o bien utilizar el enlace a github Pages de este mismo repositorio [Click here](jaimemg03.github.io/IE/)
+También puedes usar el enlace a GitHub Pages de este repositorio.
 
 ## Instalación y Uso
 
@@ -42,19 +88,20 @@ o bien utilizar el enlace a github Pages de este mismo repositorio [Click here](
 
 2. **Abre el proyecto en Visual Studio Code (o tu editor preferido).**
 
-3. **Inicia un servidor local:** Si usas Visual Studio Code, instala la extensión "Live Server" y haz clic en "Go Live" para iniciar el servidor.
+3. **Inicia un servidor local:** con la extensión "Live Server", haz clic en "Go Live".
 
-4. **Accede a la aplicación:** Abre el navegador y accede a la URL proporcionada por el servidor (por ejemplo, http://127.0.0.1:5500/src/index.html).
+4. **Accede a la aplicación:** abre en el navegador la URL proporcionada (por ejemplo, http://127.0.0.1:5500/index.html).
 
 5. **Utiliza el programa:**
 
-Selecciona los temas que deseas incluir en el cuestionario.
-Indica el número de preguntas que deseas responder.
-Haz clic en "Generar preguntas" para comenzar.
-Responde las preguntas y haz clic en "Corregir respuestas" para ver tu puntuación.
+   - Selecciona la asignatura.
+   - Selecciona los temas que deseas incluir.
+   - Indica el número de preguntas que deseas responder.
+   - Pulsa "Generar preguntas" para comenzar.
+   - Responde las preguntas y pulsa "Corregir respuestas" para ver tu puntuación.
 
 ## Licencia
 Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
 ## Autores
-Desarrollado por Jaime Martín y Adrián Padrón para preparar el exámen de la asignatura de Inteligencia Emocional en la Universidad de La Laguna.
+Desarrollado por Jaime Martín y Adrián Padrón para preparar exámenes en la Universidad de La Laguna.

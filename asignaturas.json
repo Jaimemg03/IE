@@ -1,0 +1,19 @@
+{
+  "inteligencia-emocional": {
+    "nombre": "Inteligencia Emocional",
+    "temas": [
+      { "id": 1, "nombre": "Tema 1 - Emociones e inteligencia", "archivo": "asignaturas/inteligencia-emocional/test_tema_1.json" },
+      { "id": 2, "nombre": "Tema 2 - Teorías de la inteligencia", "archivo": "asignaturas/inteligencia-emocional/test_tema_2.json" },
+      { "id": 3, "nombre": "Tema 3 - Inteligencia emocional", "archivo": "asignaturas/inteligencia-emocional/test_tema_3.json" },
+      { "id": 4, "nombre": "Tema 4 - Comunicación", "archivo": "asignaturas/inteligencia-emocional/test_tema_4.json" },
+      { "id": 5, "nombre": "Tema 5 - Bienestar subjetivo", "archivo": "asignaturas/inteligencia-emocional/test_tema_5.json" },
+      { "id": 6, "nombre": "Tema 6 - Estrés y afrontamiento", "archivo": "asignaturas/inteligencia-emocional/test_tema_6.json" }
+    ]
+  },
+  "direccion-gestion-proyectos": {
+    "nombre": "Dirección y Gestión de Proyectos",
+    "temas": [
+      { "id": 1, "nombre": "Tema 1 - Scrum", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_1.json" }
+    ]
+  }
+}

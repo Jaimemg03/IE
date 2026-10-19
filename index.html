@@ -2,19 +2,29 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Test de Inteligencia Emocional</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test de autoevaluación</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Test de Inteligencia Emocional</h1>
-  <label for="cantidad">¿Cuántas preguntas deseas responder? (máx: 100)</label>
-  <input type="number" id="cantidad" min="1" max="100" value="30">
-  <button onclick="generarPreguntas()" class="boton">Generar preguntas</button>
+  <h1 id="titulo">Test de autoevaluación</h1>
+
+  <label for="asignatura">Seleccione la asignatura:</label>
+  <select id="asignatura"></select>
+
   <br>
   <label>Seleccione los temas a incluir:</label>
-  
+  <div id="contenedorBotones"></div>
+
+  <button id="botonTodos" class="boton" type="button">Seleccionar todos los temas</button>
+
+  <br>
+  <label for="cantidad">¿Cuántas preguntas deseas responder?</label>
+  <input type="number" id="cantidad" min="1" max="100" value="30">
+  <button id="botonGenerar" class="boton" type="button">Generar preguntas</button>
+
   <form id="formulario"></form>
-  <button onclick="corregir()" class="boton">Corregir respuestas</button>
+  <button id="botonCorregir" class="boton" type="button">Corregir respuestas</button>
   <div id="resultado"></div>
 
   <script src="script.js"></script>

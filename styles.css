@@ -21,6 +21,39 @@ input {
   margin-bottom: 15px;
 }
 
+input[type="radio"] {
+  padding: 0;
+  margin: 0 8px 0 0;
+  vertical-align: middle;
+}
+
+select {
+  padding: 9px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  background: #fff;
+  cursor: pointer;
+}
+
+#contenedorBotones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#contenedorBotones .tema {
+  margin: 0;
+}
+
+#contenedorBotones .tema.seleccionado {
+  background-color: #d4edda;
+  border: 1px solid #c8e6c9;
+}
+
 .pregunta {
   margin-bottom: 20px;
   background: #fff;
@@ -28,6 +61,17 @@ input {
   border-radius: 8px;
   border: 1px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.opcion {
+  display: block;
+  margin: 6px 0;
+  cursor: pointer;
+}
+
+.opcion-correcta {
+  color: #1b5e20;
+  font-weight: bold;
 }
 
 .boton {
