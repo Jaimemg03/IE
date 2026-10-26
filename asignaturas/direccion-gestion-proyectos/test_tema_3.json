@@ -1,0 +1,602 @@
+[
+{
+"pregunta": "Asegurar la calidad de la información es una actividad relacionada con la competencia personal ...",
+"opciones": [
+"Efectividad",
+"Liderazgo",
+"Comunicación",
+"Gestión"
+],
+"respuesta": 2
+},
+{
+"pregunta": "¿Cuál de las siguientes no es una competencia según el modelo PMCDF?",
+"opciones": [
+"Rendimiento",
+"Habilidades organizativas",
+"Personal",
+"Conocimiento"
+],
+"respuesta": 1
+},
+{
+"pregunta": "\"Asegurar la calidad de la información\" está relacionado con ...",
+"opciones": [
+"La competencia personal de comunicación",
+"La competencia personal de gestión",
+"La competencia personal de profesionalidad",
+"La competencia personal de efectividad"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Cuál de las siguientes no es una de las competencias personales?",
+"opciones": [
+"Gestión",
+"Liderazgo",
+"Habilidades cognitivas",
+"Organizacional"
+],
+"respuesta": 3
+},
+{
+"pregunta": "Los criterios de rendimiento son ...",
+"opciones": [
+"Lo que hay que hacer para demostrar el conocimiento",
+"La forma en que se demuestra la competencia",
+"Los indicadores de rendimiento de las competencias",
+"Una de las competencias personales"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál de los siguientes no es parte de la definición clásica de equipo?",
+"opciones": [
+"Con unidad de dirección",
+"Pequeño grupo de personas",
+"Comprometidos con objetivo de rendimiento",
+"Habilidades complementarias"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Cuál es el tipo de dirección que encaja mejor con SCRUM?",
+"opciones": [
+"Bilateral",
+"Supervisión",
+"Multilateral",
+"Autoritaria"
+],
+"respuesta": 2
+},
+{
+"pregunta": "¿Qué perfil no implantaría SCRUM en un grupo de trabajo?",
+"opciones": [
+"Profeta",
+"Constructor",
+"Sinergista",
+"Bárbaro"
+],
+"respuesta": 3
+},
+{
+"pregunta": "¿Qué organización desarrolló el marco PMCDF (Project Manager Competency Development Framework)?",
+"opciones": [
+"IPMA",
+"PMI",
+"PRINCE2",
+"Scrum Alliance"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuántas dimensiones de competencia principales contempla el estándar PMCDF?",
+"opciones": [
+"Dos",
+"Tres",
+"Cinco",
+"Seis"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En el marco PMCDF, ¿a qué se refiere la dimensión de Competencia de Conocimiento?",
+"opciones": [
+"A lo que el director de proyecto sabe sobre la aplicación de procesos y herramientas",
+"A lo que el director de proyecto demuestra mediante el comportamiento personal",
+"A los resultados obtenidos al aplicar las herramientas de gestión",
+"A la experiencia previa en proyectos similares"
+],
+"respuesta": 0
+},
+{
+"pregunta": "En el marco PMCDF, la dimensión de Competencia de Desempeño o Rendimiento se evalúa mediante:",
+"opciones": [
+"Exámenes teóricos y certificaciones escritas",
+"Lo que el director de proyecto logra al aplicar sus conocimientos",
+"El nivel de empatía con los miembros del equipo",
+"El presupuesto total manejado en la organización"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué abarca la dimensión de Competencia Personal en el marco PMCDF?",
+"opciones": [
+"El conocimiento del estándar PMBOK",
+"Cómo se comporta el director de proyecto al ejecutar actividades en el entorno del proyecto",
+"Los entregables del proyecto completados a tiempo",
+"Las certificaciones técnicas acumuladas por el profesional"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En la estructura jerárquica de PMCDF, ¿qué elemento se encuentra inmediatamente debajo de una Unidad de Competencia?",
+"opciones": [
+"Criterio de Rendimiento",
+"Elemento de Competencia",
+"Evidencia de Desempeño",
+"Indicador de Calidad"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué elemento dentro de la estructura PMCDF describe los resultados específicos que deben lograrse para demostrar un Elemento de Competencia?",
+"opciones": [
+"Unidad de trabajo",
+"Criterio de rendimiento",
+"Juicio experto",
+"Métrica de entrada"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En el modelo PMCDF, ¿qué función cumple la Evidencia?",
+"opciones": [
+"Demostrar formalmente que se han cumplido los criterios de rendimiento",
+"Definir el salario del director de proyectos",
+"Establecer la metodología de gestión de riesgos",
+"Aprobar la acta de constitución del proyecto"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Cuál de los siguientes grupos de competencias pertenece al ámbito de la Competencia Personal en PMCDF?",
+"opciones": [
+"Gestión de Alcance, Tiempo y Coste",
+"Comunicación, Liderazgo y Gestión",
+"Planificación, Ejecución y Monitoreo",
+"Programación, Presupuestación y Contratación"
+],
+"respuesta": 1
+},
+{
+"pregunta": "La capacidad de tomar decisiones oportunas y resolver problemas complejos mediante el razonamiento analítico se clasifica en PMCDF dentro de:",
+"opciones": [
+"Comunicación",
+"Habilidades Cognitivas",
+"Liderazgo",
+"Gestión"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Mantener el autocontrol, la resiliencia y la asertividad bajo situaciones de estrés se asocia en PMCDF a la competencia de:",
+"opciones": [
+"Efectividad",
+"Profesionalidad",
+"Cognición",
+"Supervisión"
+],
+"respuesta": 0
+},
+{
+"pregunta": "El compromiso ético, el cumplimiento normativo y el aprendizaje organizacional continuo forman parte de la competencia personal de:",
+"opciones": [
+"Gestión",
+"Profesionalidad",
+"Liderazgo",
+"Efectividad"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es la fórmula para calcular el número de canales de comunicación posibles en un equipo de N personas?",
+"opciones": [
+"N * (N + 1) / 2",
+"N * (N - 1) / 2",
+"N^2 - 1",
+"(N - 1)^2"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Según el modelo de Tuckman sobre el desarrollo de equipos, ¿cuál es la etapa caracterizada por conflictos internos y desacuerdos en los roles?",
+"opciones": [
+"Formación (Forming)",
+"Turbulencia (Storming)",
+"Normalización (Norming)",
+"Desempeño (Performing)"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En el modelo de Tuckman, la etapa en la que el equipo alcanza alta sinergia, autonomía y productividad óptima se denomina:",
+"opciones": [
+"Normalización",
+"Desempeño",
+"Disolución",
+"Formación"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué caracteriza principalmente al Liderazgo Servidor (Servant Leadership) en entornos ágiles?",
+"opciones": [
+"El líder toma todas las decisiones técnicas del equipo",
+"El líder se enfoca en satisfacer las necesidades del equipo y eliminar impedimentos",
+"El líder delega la responsabilidad final de los resultados",
+"El líder supervisa de forma estricta las horas de trabajo"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es la técnica de resolución de conflictos que busca una solución 'ganar-ganar' satisfaciendo plenamente las necesidades de ambas partes?",
+"opciones": [
+"Forzar / Dirigir",
+"Colaborar / Resolver el problema",
+"Evitar / Retirarse",
+"Suavizar / Ceder"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En la resolución de conflictos, la técnica de 'Compromiso' consiste en:",
+"opciones": [
+"Ignorar el conflicto hasta que desaparezca",
+"Buscar una solución temporal o parcial donde ambas partes ceden algo",
+"Imponer una postura mediante autoridad formal",
+"Aceptar totalmente los argumentos de la otra parte"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Según el Código de Ética y Conducta Profesional del PMI, ¿cuáles son los cuatro valores fundamentales?",
+"opciones": [
+"Calidad, Tiempo, Coste y Alcance",
+"Responsabilidad, Respeto, Equidad y Honestidad",
+"Liderazgo, Gestión, Comunicación y Efectividad",
+"Transparencia, Inspección, Adaptación y Confianza"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué tipo de poder se basa en el conocimiento técnico especializado que posee un individuo?",
+"opciones": [
+"Poder Legítimo",
+"Poder de Experto",
+"Poder Referente",
+"Poder Coercitivo"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué tipo de poder proviene del carisma, la admiración y el respeto interpersonal que genera el líder?",
+"opciones": [
+"Poder de Recompensa",
+"Poder Referente",
+"Poder Legítimo",
+"Poder Formal"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En Scrum, ¿quién es el responsable principal de maximizar el valor del producto y gestionar la pila del producto (Product Backlog)?",
+"opciones": [
+"Scrum Master",
+"Product Owner",
+"Equipo de Desarrollo",
+"Project Manager Tradicional"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En un entorno Scrum, ¿cuál es la función principal del Scrum Master con respecto a los impedimentos?",
+"opciones": [
+"Asignar tareas individuales a los desarrolladores",
+"Facilitar la eliminación de obstáculos que bloquean al equipo",
+"Aprobar el presupuesto asignado al Sprint",
+"Definir los criterios de aceptación del usuario"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué caracteriza a un equipo autogestionado en el marco ágil?",
+"opciones": [
+"No requiere rendir cuentas a la organización",
+"El propio equipo decide cómo realizar el trabajo y distribuir las tareas",
+"Cada miembro trabaja sin coordinación con los demás",
+"Carece de roles o responsabilidades definidas"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Según Daniel Goleman, la habilidad de comprender y compartir las emociones de otras personas se denomina:",
+"opciones": [
+"Autorregulación",
+"Empatía",
+"Automotivación",
+"Habilidad social"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En el modelo de Liderazgo Situacional de Hersey y Blanchard, si un colaborador tiene alta competencia y alto compromiso, el estilo adecuado es:",
+"opciones": [
+"Dirigir",
+"Persuadir",
+"Participar",
+"Delegar"
+],
+"respuesta": 3
+},
+{
+"pregunta": "Si un colaborador presenta baja competencia pero un alto compromiso en una tarea nueva, el líder situacional debe adoptar un estilo:",
+"opciones": [
+"Delegador",
+"Directivo",
+"Participativo",
+"Laissez-faire"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es el objetivo primordial del proceso de autoevaluación dentro del modelo PMCDF?",
+"opciones": [
+"Identificar fortalezas y brechas de competencia para elaborar un plan de desarrollo personal",
+"Sustituir la evaluación de desempeño realizada por Recursos Humanos",
+"Determinar la tarifa por hora aplicable al director de proyectos",
+"Auditar los entregables de los proyectos finalizados"
+],
+"respuesta": 0
+},
+{
+"pregunta": "La Teoría X de McGregor asume que las personas:",
+"opciones": [
+"Buscan de forma natural asumir responsabilidades en el trabajo",
+"Muestran aversión al trabajo y necesitan control o coerción para rendir",
+"Trabajan únicamente motivadas por el reconocimiento social",
+"Son creativas por naturaleza en la resolución de problemas"
+],
+"respuesta": 1
+},
+{
+"pregunta": "La Teoría Y de McGregor sostiene que los empleados:",
+"opciones": [
+"Requieren supervisión constante y estricta",
+"Consideran el trabajo como algo natural y pueden autodirigirse si están motivados",
+"Sólo trabajan bien cuando existe la amenaza de sanciones",
+"Carecen de ambición profesional"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En la Teoría de los Dos Factores de Herzberg, los factores de 'Higiene' (como el salario y las condiciones físicas):",
+"opciones": [
+"Generan alta motivación e incentivan el máximo rendimiento",
+"Previenen la insatisfacción pero no generan motivación por sí solos",
+"Son innecesarios para el bienestar laboral",
+"Dependen exclusivamente del rendimiento individual"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Según la Teoría de Herzberg, ¿cuál de los siguientes es un factor motivador intrínseco?",
+"opciones": [
+"El salario básico",
+"El reconocimiento por el logro alcanzado",
+"Las políticas administrativas de la empresa",
+"La seguridad en el puesto laboral"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Qué diferencia fundamental existe entre 'Gestión' (Management) y 'Liderazgo' (Leadership)?",
+"opciones": [
+"La gestión busca el orden y la eficiencia; el liderazgo promueve la visión y la alineación del cambio",
+"La gestión la realiza el cliente; el liderazgo lo asume el equipo técnico",
+"La gestión se aplica sólo en proyectos ágiles; el liderazgo en proyectos tradicionales",
+"No existe diferencia, son términos idénticos en PMCDF"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Cuál es el propósito principal de la reunión de Retrospectiva del Sprint (Sprint Retrospective)?",
+"opciones": [
+"Presentar el incremento del producto a los interesados",
+"Inspeccionar el proceso, herramientas y relaciones del equipo para acordar mejoras",
+"Estimar las historias de usuario del próximo Sprint",
+"Revisar el desglose de costes del proyecto"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es la duración máxima recomendada para el Daily Scrum?",
+"opciones": [
+"15 minutos",
+"30 minutos",
+"1 hora",
+"Lo que determine el Product Owner en cada sesión"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Qué es la Escucha Activa en la comunicación del Director de Proyecto?",
+"opciones": [
+"Oír al interlocutor mientras se preparan las respuestas a dar",
+"Técnica orientada a comprender plenamente el mensaje, verificando la comprensión del interlocutor",
+"Tomar notas detalladas sin interrumpir bajo ninguna circunstancia",
+"Aceptar todas las peticiones del cliente sin cuestionarlas"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En la evaluación de la competencia de desempeño según PMCDF, los datos provienen habitualmente de:",
+"opciones": [
+"Un examen de opción múltiple tipo test",
+"Múltiples fuentes y observadores en el entorno real de trabajo (feedback 360°)",
+"Un análisis de currículum vitae exclusivamente",
+"La antigüedad del profesional en la empresa"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es la técnica de resolución de conflictos conocida como 'Forzar/Dirigir'?",
+"opciones": [
+"Hacer concesiones mutuas para salir del paso",
+"Imponer el punto de vista propio valiéndose de la autoridad",
+"Posponer la decisión para reducir la tensión",
+"Buscar el consenso entre todas las partes involucradas"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En PMCDF, la habilidad para negociar acuerdos con los interesados manteniendo relaciones constructivas es parte de la competencia personal de:",
+"opciones": [
+"Comunicación y Gestión",
+"Habilidades puramente financieras",
+"Planificación táctica",
+"Control de calidad"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Qué estilo de liderazgo se enfoca en inspirar y motivar a los colaboradores para transformar la organización mediante el cambio continuo?",
+"opciones": [
+"Transaccional",
+"Transformacional",
+"Autocrático",
+"Burocrático"
+],
+"respuesta": 1
+},
+{
+"pregunta": "El liderazgo Transaccional se caracteriza por:",
+"opciones": [
+"Inspirar mediante una visión compartida de futuro a largo plazo",
+"Intercambios basados en recompensas o castigos en función del cumplimiento de metas",
+"Dejar completa libertad al equipo sin establecer directrices",
+"Desarrollar la empatía como único pilar de dirección"
+],
+"respuesta": 1
+},
+{
+"pregunta": "Dentro del modelo PMCDF, las competencias de Desempeño (Performance) se estructuran según:",
+"opciones": [
+"Los Grupos de Procesos y Áreas de Conocimiento de la gestión de proyectos",
+"Los rasgos psicológicos del individuo",
+"Las certificaciones académicas del director de proyectos",
+"Los tipos de software de gestión utilizados"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Cuál es el primer paso en el ciclo continuo de mejora profesional basado en PMCDF?",
+"opciones": [
+"Aplica la autoevaluación o evaluación formal de competencias",
+"Solicitar un aumento salarial",
+"Ejecutar proyectos de gran envergadura directamente",
+"Diseñar un plan de formación avanzado"
+],
+"respuesta": 0
+},
+{
+"pregunta": "Una persona con alta Inteligencia Emocional demuestra la capacidad de:",
+"opciones": [
+"Reconocer, comprender y gestionar las emociones propias y ajenas",
+"Evitar cualquier tipo de conflicto en el trabajo",
+"Tomar decisiones basándose exclusivamente en datos cuantitativos",
+"Eliminar por completo la expresión de emociones en el entorno laboral"
+],
+"respuesta": 0
+},
+{
+"pregunta": "En un equipo de 8 personas, ¿cuántos canales de comunicación posibles existen?",
+"opciones": [
+"28",
+"56",
+"16",
+"64"
+],
+"respuesta": 0
+},
+{
+"pregunta": "¿Qué rol en un entorno ágil es el responsable de definir los requisitos y priorizar el Product Backlog?",
+"opciones": [
+"Scrum Master",
+"Product Owner",
+"Developer",
+"Agile Coach"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En el contexto de las competencias personales, la 'Asertividad' implica:",
+"opciones": [
+"Aceptar las demandas de otros sin objeciones para evitar fricciones",
+"Expresar pensamientos, necesidades y opiniones de forma clara, directa y respetuosa",
+"Imponer las opiniones personales por encima de las de los demás",
+"Guardar silencio cuando surgen desacuerdos técnicos"
+],
+"respuesta": 1
+},
+{
+"pregunta": "¿Cuál es la función principal de la reunión de Revisión del Sprint (Sprint Review)?",
+"opciones": [
+"Inspeccionar el incremento completado y adaptar el Product Backlog según el feedback de las partes interesadas",
+"Planificar el trabajo detallado del siguiente Sprint",
+"Evaluar el rendimiento individual de cada miembro del equipo",
+"Escribir las historias de usuario de todo el proyecto"
+],
+"respuesta": 0
+},
+{
+"pregunta": "En PMCDF, la habilidad de gestionar eficientemente el tiempo propio, priorizar tareas y manejar la carga de trabajo personal se enmarca en:",
+"opciones": [
+"Efectividad",
+"Comunicación",
+"Liderazgo",
+"Conocimiento técnico"
+],
+"respuesta": 0
+},
+{
+"pregunta": "La técnica de negociación centrada en los intereses de las partes en lugar de en sus posiciones cerradas se conoce como:",
+"opciones": [
+"Negociación de suma cero",
+"Negociación colaborativa o basada en principios",
+"Negociación distributiva",
+"Negociación defensiva"
+],
+"respuesta": 1
+},
+{
+"pregunta": "En la gestión de interesados (Stakeholders), la matriz Poder / Interés ayuda al Director de Proyecto a:",
+"opciones": [
+"Clasificar a los interesados para definir la estrategia de participación y comunicación adecuada",
+"Calcular los costes salariales de cada interesado",
+"Asignar las tareas de desarrollo técnico a los clientes",
+"Eliminar a los interesados con menor poder del proyecto"
+],
+"respuesta": 0
+},
+{
+"pregunta": "Una vez identificado un déficit o brecha de competencias mediante PMCDF, el paso posterior es:",
+"opciones": [
+"Desarrollar un Plan de Desarrollo Profesional (PDP) con acciones formativas y experienciales",
+"Abandonar la dirección de proyectos complejos",
+"Repetir la evaluación inmediatamente hasta aprobar",
+"Delegar todas las competencias deficientes en otros miembros"
+],
+"respuesta": 0
+}
+]
