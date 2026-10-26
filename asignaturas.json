@@ -13,7 +13,7 @@
   "direccion-gestion-proyectos": {
     "nombre": "Dirección y Gestión de Proyectos",
     "temas": [
-      { "id": 1, "nombre": "Tema 1 - Scrum", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_1.json" }
+      { "id": 1, "nombre": "Tema 1 - Scrum", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_1.json" },
       { "id": 3, "nombre": "Tema 3 - PMCDF", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_3.json" }
     ]
   }
