@@ -1,0 +1,196 @@
+[
+  {
+    "pregunta": "¿Qué conjunto de estándares permite crear componentes reutilizables y encapsulados de forma nativa en el navegador?",
+    "opciones": [
+      "Web Components",
+      "Service Workers",
+      "WebSockets",
+      "IndexedDB"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el objetivo principal de los Web Components?",
+    "opciones": [
+      "Crear elementos personalizados reutilizables con DOM y estilos encapsulados.",
+      "Sustituir el protocolo HTTP por WebSockets.",
+      "Compilar hojas de estilo Sass en el navegador.",
+      "Gestionar bases de datos relacionales."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué API permite registrar una etiqueta personalizada y asociarla a una clase JavaScript?",
+    "opciones": [
+      "customElements.define",
+      "document.createElement",
+      "window.define",
+      "HTMLElement.register"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué requisito debe cumplir el nombre de una etiqueta personalizada?",
+    "opciones": [
+      "Contener al menos un guion y no coincidir con una etiqueta HTML reservada.",
+      "Empezar siempre por mayúscula.",
+      "Contener dos puntos.",
+      "Ser siempre una única palabra."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿De qué clase debe heredar un Custom Element autónomo?",
+    "opciones": [
+      "HTMLElement",
+      "HTMLCustomElement",
+      "Element",
+      "Document"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la función del constructor en un Custom Element?",
+    "opciones": [
+      "Inicializar la instancia cuando se crea el elemento.",
+      "Ejecutarse cada vez que el elemento se inserta en el DOM.",
+      "Observar los cambios de atributos.",
+      "Renderizar el HTML de la página completa."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuándo se ejecuta connectedCallback?",
+    "opciones": [
+      "Cuando el elemento se inserta en el DOM.",
+      "Cuando se crea la instancia.",
+      "Cuando el elemento se elimina del DOM.",
+      "Cuando cambia un atributo observado."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuándo se ejecuta disconnectedCallback?",
+    "opciones": [
+      "Cuando el elemento se elimina del DOM.",
+      "Cuando el elemento se conecta a la red.",
+      "Cuando se crea la instancia.",
+      "Cuando se modifica el shadow DOM."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué callback se ejecuta cuando cambia un atributo observado?",
+    "opciones": [
+      "attributeChangedCallback",
+      "connectedCallback",
+      "constructor",
+      "adoptedCallback"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve observedAttributes?",
+    "opciones": [
+      "Para declarar los atributos cuyo cambio debe notificarse a attributeChangedCallback.",
+      "Para definir los estilos del shadow DOM.",
+      "Para listar los eventos que emite el componente.",
+      "Para registrar el elemento en el navegador."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué proporciona Shadow DOM?",
+    "opciones": [
+      "Un árbol DOM y estilos encapsulados dentro del componente.",
+      "Una copia completa del DOM principal.",
+      "Acceso directo a una base de datos.",
+      "Un servidor local para el componente."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cómo se adjunta un shadow root a un elemento?",
+    "opciones": [
+      "Con element.attachShadow({ mode: 'open' }).",
+      "Con element.createShadow().",
+      "Con element.shadowRoot().",
+      "Con document.attachShadow(element)."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué selector se usa dentro del shadow DOM para estilizar el propio elemento anfitrión?",
+    "opciones": [
+      ":host",
+      ":root",
+      ":scope",
+      "::slotted"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué elemento permite proyectar contenido externo dentro de un Web Component?",
+    "opciones": [
+      "slot",
+      "div",
+      "content",
+      "portal"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre un slot con nombre y el slot por defecto?",
+    "opciones": [
+      "El slot con nombre recibe el contenido marcado con slot=\"nombre\"; el slot por defecto recibe el contenido no asignado.",
+      "El slot con nombre solo acepta texto y el slot por defecto acepta HTML.",
+      "El slot por defecto no existe en los Web Components.",
+      "Ambos reciben exactamente el mismo contenido."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve la etiqueta template?",
+    "opciones": [
+      "Para definir marcado inerte que no se renderiza hasta que se clona e inserta.",
+      "Para cargar hojas de estilo externas.",
+      "Para ejecutar JavaScript en segundo plano.",
+      "Para crear un servidor web."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un CustomEvent?",
+    "opciones": [
+      "Un evento personalizado que puede transportar datos en la propiedad detail.",
+      "Un evento nativo del teclado.",
+      "Una función del DOM.",
+      "Un tipo de selector CSS."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué propiedad del evento permite que cruce el límite del shadow DOM?",
+    "opciones": [
+      "composed: true",
+      "bubbles: false",
+      "detail: true",
+      "capture: true"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Es recomendable suscribirse a eventos en connectedCallback y desuscribirse en disconnectedCallback para evitar fugas de memoria y listeners duplicados.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Cuál es una ventaja de comunicar componentes mediante eventos en lugar de referencias directas?",
+    "opciones": [
+      "Reduce el acoplamiento y permite que los componentes evolucionen de forma independiente.",
+      "Aumenta el acoplamiento entre componentes.",
+      "Impide reutilizar los componentes.",
+      "Obliga a usar Shadow DOM en todos los casos."
+    ],
+    "respuesta": 0
+  }
+]

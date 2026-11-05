@@ -1,0 +1,190 @@
+[
+  {
+    "pregunta": "¿Qué es Astro?",
+    "opciones": [
+      "Un framework para construir sitios web priorizando el contenido y la generación estática.",
+      "Un preprocesador de CSS.",
+      "Un navegador web.",
+      "Un gestor de bases de datos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué significa SSG?",
+    "opciones": [
+      "Generación de sitios estáticos, pre-renderizando las páginas en tiempo de compilación.",
+      "Renderizado en cada petición del usuario.",
+      "Ejecución de JavaScript únicamente en el servidor.",
+      "Un sistema de gestión de contenidos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre SSG y SSR?",
+    "opciones": [
+      "SSG genera el HTML en el build y SSR lo genera en cada petición.",
+      "SSG solo funciona con React y SSR solo con Vue.",
+      "SSR no utiliza HTML.",
+      "Son exactamente sinónimos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es una ventaja de la generación estática?",
+    "opciones": [
+      "Buen rendimiento, seguridad y bajo coste al servir HTML ya generado.",
+      "Requiere un servidor complejo en cada petición.",
+      "Impide utilizar CSS.",
+      "No es indexable por los buscadores."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es una limitación de la generación estática?",
+    "opciones": [
+      "El contenido personalizado o que cambia con frecuencia requiere reconstrucciones o estrategias adicionales.",
+      "No se puede utilizar HTML.",
+      "No permite incluir imágenes.",
+      "Solo funciona en local."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué partes componen un archivo .astro?",
+    "opciones": [
+      "Frontmatter entre guiones, plantilla HTML y estilos.",
+      "Solo JavaScript.",
+      "Solo CSS.",
+      "Un archivo binario comprimido."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "El código del frontmatter de un componente Astro se ejecuta en el navegador del usuario.",
+    "respuesta": false
+  },
+  {
+    "pregunta": "¿Cómo se reciben las props en un componente Astro?",
+    "opciones": [
+      "Astro.props",
+      "this.props",
+      "window.props",
+      "document.props"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un slot en Astro?",
+    "opciones": [
+      "Un punto de inserción para el contenido que se pasa a un componente.",
+      "Una variable global.",
+      "Un tipo de ruta.",
+      "Una función de compilación."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre un slot por defecto y un slot con nombre?",
+    "opciones": [
+      "El slot con nombre se rellena con contenido marcado con slot=\"nombre\"; el por defecto recibe el contenido sin asignar.",
+      "No existe el slot con nombre en Astro.",
+      "El slot por defecto solo acepta texto.",
+      "Ambos reciben exactamente el mismo contenido."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve un layout en Astro?",
+    "opciones": [
+      "Para compartir estructura común como cabecera, pie y estilos entre páginas.",
+      "Para compilar Sass.",
+      "Para crear una base de datos.",
+      "Para definir rutas dinámicas."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Dónde se colocan las páginas en un proyecto Astro?",
+    "opciones": [
+      "src/pages",
+      "src/components",
+      "public",
+      "dist"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué nombre debe tener un archivo para crear una ruta dinámica en Astro?",
+    "opciones": [
+      "[id].astro",
+      "id.astro",
+      "_id.astro",
+      "dynamic.astro"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve getStaticPaths()?",
+    "opciones": [
+      "Para definir los parámetros y props de las páginas que se generarán en el build.",
+      "Para obtener datos en tiempo de ejecución.",
+      "Para configurar el servidor.",
+      "Para crear estilos globales."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué debe devolver getStaticPaths()?",
+    "opciones": [
+      "Un array de objetos con params y, opcionalmente, props.",
+      "Una promesa con HTML.",
+      "Un objeto con estilos.",
+      "Una cadena de texto."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Astro no envía JavaScript al cliente por defecto salvo que se usen componentes interactivos o scripts.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Qué es la arquitectura de islas en Astro?",
+    "opciones": [
+      "Un modelo en el que solo las partes interactivas se hidratan con JavaScript.",
+      "Un tipo de base de datos.",
+      "Una técnica de CSS.",
+      "Un servidor de imágenes."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué directiva se usa para hidratar un componente cuando es visible en pantalla?",
+    "opciones": [
+      "client:visible",
+      "client:load",
+      "client:idle",
+      "client:only"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cómo se aplican estilos con alcance local en un componente Astro?",
+    "opciones": [
+      "Con un bloque style dentro del componente, que Astro encapsula.",
+      "Con un archivo CSS global obligatorio.",
+      "Con atributos style inline siempre.",
+      "No se pueden aplicar estilos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué comando genera el sitio estático listo para desplegar?",
+    "opciones": [
+      "npm run build",
+      "npm run dev",
+      "npm run start",
+      "npm run test"
+    ],
+    "respuesta": 0
+  }
+]

@@ -1,0 +1,190 @@
+[
+  {
+    "pregunta": "¿Qué es una prueba end-to-end (E2E)?",
+    "opciones": [
+      "Una prueba que valida un flujo completo de usuario a través de la aplicación y sus dependencias.",
+      "Una prueba que verifica una función aislada.",
+      "Una prueba de rendimiento del servidor.",
+      "Una prueba de compilación de Sass."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿En qué nivel de la pirámide de pruebas se sitúan las pruebas E2E?",
+    "opciones": [
+      "En la cima: son pocas, más lentas y validan el sistema completo.",
+      "En la base: son muchas y muy rápidas.",
+      "Fuera de la pirámide, no se consideran pruebas.",
+      "En el mismo nivel que las pruebas unitarias."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el principal objetivo de una prueba E2E?",
+    "opciones": [
+      "Comprobar el comportamiento del sistema desde la perspectiva del usuario.",
+      "Medir la cobertura de líneas de código.",
+      "Compilar la aplicación.",
+      "Generar documentación automáticamente."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál de los siguientes es un componente habitual de un caso de prueba?",
+    "opciones": [
+      "Identificador, precondiciones, pasos, resultado esperado y aserciones.",
+      "Solo el código fuente.",
+      "Únicamente el nombre del archivo.",
+      "La contraseña del servidor."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un caso de prueba negativo?",
+    "opciones": [
+      "Un caso que comprueba que el sistema rechaza o gestiona correctamente una entrada inválida.",
+      "Un caso que siempre falla por definición.",
+      "Un caso sin aserciones.",
+      "Un caso que se ejecuta después de todos los demás."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Las pruebas E2E deben ser independientes para poder ejecutarse en cualquier orden y en paralelo.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "Un test flaky es una prueba que a veces pasa y a veces falla sin que haya cambios en el código.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Cuál es una causa frecuente de pruebas inestables?",
+    "opciones": [
+      "Las esperas artificiales y las dependencias de tiempo o de estado compartido.",
+      "Usar getByRole.",
+      "Usar aserciones.",
+      "Ejecutar en modo headless."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de espera es preferible en Playwright?",
+    "opciones": [
+      "Esperar por una condición o usar aserciones que reintentan automáticamente.",
+      "Usar waitForTimeout con un valor fijo.",
+      "Usar setTimeout manual.",
+      "No esperar nunca."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador es más estable ante cambios de diseño?",
+    "opciones": [
+      "getByRole o getByTestId.",
+      "Una ruta CSS basada en divs y clases generadas.",
+      "Un XPath absoluto.",
+      "nth-child."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirven las aserciones en una prueba?",
+    "opciones": [
+      "Para comprobar que el resultado real coincide con el esperado.",
+      "Para acelerar la ejecución.",
+      "Para generar datos de prueba.",
+      "Para instalar dependencias."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué debe priorizar una batería E2E?",
+    "opciones": [
+      "Los flujos críticos de negocio y las funcionalidades de mayor riesgo.",
+      "Todas las líneas de código por igual.",
+      "Solo los casos negativos.",
+      "Únicamente el rendimiento."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es una prueba de regresión?",
+    "opciones": [
+      "Una prueba que verifica que un cambio no ha roto funcionalidades existentes.",
+      "Una prueba que solo se ejecuta la primera vez.",
+      "Una prueba de carga.",
+      "Una prueba de compilación."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es una prueba de humo (smoke test)?",
+    "opciones": [
+      "Una prueba rápida que comprueba que las funcionalidades básicas funcionan.",
+      "Una prueba exhaustiva de todos los casos.",
+      "Una prueba de estrés.",
+      "Una prueba de accesibilidad."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué relación hay entre los criterios de aceptación y las pruebas E2E?",
+    "opciones": [
+      "Las pruebas E2E pueden derivarse de los criterios de aceptación para validar que se cumplen.",
+      "No tienen ninguna relación.",
+      "Los criterios de aceptación sustituyen a las aserciones.",
+      "Solo se usan en pruebas unitarias."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es el patrón Arrange-Act-Assert?",
+    "opciones": [
+      "Una estructura para preparar el estado, ejecutar la acción y comprobar el resultado.",
+      "Un patrón de diseño CSS.",
+      "Un tipo de localizador.",
+      "Una configuración de servidor."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué técnica de diseño de pruebas divide las entradas en grupos con comportamiento similar?",
+    "opciones": [
+      "Partición de equivalencia",
+      "Análisis de red",
+      "Interpolación",
+      "Herencia"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué técnica se centra en los valores límite de una entrada?",
+    "opciones": [
+      "Análisis de valores límite",
+      "Pruebas de humo",
+      "Pruebas de regresión",
+      "Pruebas de carga"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué aporta ejecutar las pruebas E2E en integración continua (CI)?",
+    "opciones": [
+      "Detectar regresiones de forma temprana y automatizar la validación en cada cambio.",
+      "Eliminar la necesidad de pruebas unitarias.",
+      "Sustituir al usuario en la validación manual.",
+      "Reducir la cobertura de pruebas."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué patrón ayuda a mantener las pruebas E2E cuando cambia la interfaz?",
+    "opciones": [
+      "Page Object Model, encapsulando selectores y acciones por página.",
+      "Duplicar los selectores en cada prueba.",
+      "Usar solo XPath.",
+      "Eliminar las aserciones."
+    ],
+    "respuesta": 0
+  }
+]

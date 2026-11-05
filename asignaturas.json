@@ -16,5 +16,15 @@
       { "id": 1, "nombre": "Tema 1 - Scrum", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_1.json" },
       { "id": 3, "nombre": "Tema 3 - PMCDF", "archivo": "asignaturas/direccion-gestion-proyectos/test_tema_3.json" }
     ]
+  },
+  "sistemas-tecnologias-web-cliente": {
+    "nombre": "Sistemas y Tecnologías Web: Cliente",
+    "temas": [
+      { "id": 1, "nombre": "Tema 1 - Introducción a Sass y preprocesadores CSS", "archivo": "asignaturas/sistemas-tecnologias-web-cliente/test_tema_1.json" },
+      { "id": 2, "nombre": "Tema 2 - Web Components", "archivo": "asignaturas/sistemas-tecnologias-web-cliente/test_tema_2.json" },
+      { "id": 3, "nombre": "Tema 3 - Playwright: fundamentos y localizadores", "archivo": "asignaturas/sistemas-tecnologias-web-cliente/test_tema_3.json" },
+      { "id": 4, "nombre": "Tema 4 - Pruebas end-to-end (E2E)", "archivo": "asignaturas/sistemas-tecnologias-web-cliente/test_tema_4.json" },
+      { "id": 5, "nombre": "Tema 5 - Astro y generación de sitios estáticos", "archivo": "asignaturas/sistemas-tecnologias-web-cliente/test_tema_5.json" }
+    ]
   }
 }

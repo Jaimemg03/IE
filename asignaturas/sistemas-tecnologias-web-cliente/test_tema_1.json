@@ -1,0 +1,190 @@
+[
+  {
+    "pregunta": "¿Qué es un preprocesador de CSS?",
+    "opciones": [
+      "Un lenguaje que extiende CSS con variables, funciones y estructuras de control, y se compila a CSS.",
+      "Un programa que minimiza automáticamente el HTML.",
+      "Un servidor que transforma CSS en JavaScript en tiempo de ejecución.",
+      "Una base de datos para almacenar hojas de estilo."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es el principal objetivo de usar Sass en un proyecto web?",
+    "opciones": [
+      "Sustituir por completo a JavaScript en la lógica del cliente.",
+      "Escribir CSS más mantenible y reutilizable mediante modularización y abstracciones.",
+      "Aumentar el tamaño del CSS final para mejorar el rendimiento.",
+      "Evitar que el navegador tenga que descargar CSS."
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "En el panel de red del navegador, ¿qué tipo de petición corresponde al documento HTML principal?",
+    "opciones": [
+      "document",
+      "stylesheet",
+      "script",
+      "xhr"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué tipo de recurso representa una hoja de estilos CSS descargada por el navegador?",
+    "opciones": [
+      "document",
+      "stylesheet",
+      "fetch",
+      "font"
+    ],
+    "respuesta": 1
+  },
+  {
+    "pregunta": "Las peticiones de tipo fetch y xhr permiten obtener datos de forma asíncrona sin recargar la página.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Qué diferencia principal existe entre la sintaxis Sass indentada y SCSS?",
+    "opciones": [
+      "SCSS usa llaves y punto y coma, mientras que Sass indentado usa sangría.",
+      "Sass indentado usa llaves y SCSS usa únicamente sangría.",
+      "Ambos son idénticos y no existe ninguna diferencia.",
+      "SCSS no permite anidamiento."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué es un parcial en Sass?",
+    "opciones": [
+      "Un archivo cuyo nombre comienza por guion bajo y que no se compila por sí solo.",
+      "Un archivo CSS que se carga directamente en el navegador.",
+      "Una función que devuelve un color.",
+      "Un comentario especial que Sass elimina al compilar."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la forma recomendada actualmente de cargar un parcial en Sass?",
+    "opciones": [
+      "@use",
+      "@import",
+      "require()",
+      "link rel=stylesheet"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál de las siguientes afirmaciones sobre las variables de Sass es correcta?",
+    "opciones": [
+      "Se resuelven en tiempo de compilación y el navegador recibe los valores ya sustituidos.",
+      "Se resuelven en tiempo de ejecución y participan en la cascada como las custom properties.",
+      "Solo pueden almacenar colores.",
+      "No pueden reutilizarse en varios archivos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué hace el selector padre & en Sass?",
+    "opciones": [
+      "Hace referencia al selector del bloque padre, útil para pseudo-clases y modificadores.",
+      "Concatena dos archivos Sass.",
+      "Declara una variable global.",
+      "Importa una fuente externa."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "El anidamiento excesivo en Sass puede generar selectores demasiado largos y aumentar la especificidad y el acoplamiento.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Qué es un mixin en Sass?",
+    "opciones": [
+      "Un bloque de declaraciones reutilizable que puede recibir parámetros y se incluye con @include.",
+      "Una función que solo devuelve un valor numérico.",
+      "Un archivo parcial que se compila automáticamente.",
+      "Un selector que hereda estilos de otro."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre un mixin y una función en Sass?",
+    "opciones": [
+      "El mixin genera declaraciones CSS y puede recibir argumentos; la función devuelve un valor.",
+      "La función genera declaraciones CSS y el mixin solo devuelve valores.",
+      "No hay diferencia: son sinónimos exactos.",
+      "El mixin solo funciona con colores y la función con tamaños."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué directiva se utiliza para invocar un mixin?",
+    "opciones": [
+      "@include",
+      "@extend",
+      "@use",
+      "@function"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué hace @extend en Sass?",
+    "opciones": [
+      "Hace que un selector herede las declaraciones de otro selector.",
+      "Ejecuta un bucle sobre una lista de valores.",
+      "Importa un archivo externo.",
+      "Declara una variable global."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué ventaja tiene usar un placeholder (%) con @extend frente a extender una clase normal?",
+    "opciones": [
+      "El placeholder no se genera en el CSS si no se extiende, evitando reglas duplicadas.",
+      "El placeholder se ejecuta en el navegador en tiempo real.",
+      "El placeholder permite escribir JavaScript dentro del CSS.",
+      "El placeholder sustituye a los mixins en todos los casos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué se utiliza la directiva @for en Sass?",
+    "opciones": [
+      "Para repetir un bloque de estilos un número determinado de veces, por ejemplo para generar clases de espaciado.",
+      "Para recorrer una base de datos.",
+      "Para definir una función recursiva en el navegador.",
+      "Para importar todos los parciales automáticamente."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué permite la interpolación #{} en Sass?",
+    "opciones": [
+      "Insertar el valor de una variable dentro de un selector, una propiedad o una cadena.",
+      "Ejecutar una consulta HTTP.",
+      "Declarar un mixin con parámetros.",
+      "Compilar Sass directamente en el navegador."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve un source map en Sass?",
+    "opciones": [
+      "Para relacionar el CSS compilado con el archivo Sass original y facilitar la depuración.",
+      "Para comprimir las imágenes del sitio.",
+      "Para convertir Sass en JavaScript.",
+      "Para definir rutas de navegación."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia principal entre Flexbox y Grid?",
+    "opciones": [
+      "Flexbox está pensado para distribuir elementos en una dimensión; Grid permite controlar filas y columnas en dos dimensiones.",
+      "Flexbox solo funciona en móviles y Grid solo en escritorio.",
+      "Grid no permite alinear elementos.",
+      "Ambos son exactamente iguales y se usan indistintamente."
+    ],
+    "respuesta": 0
+  }
+]

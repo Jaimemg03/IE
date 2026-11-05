@@ -1,0 +1,196 @@
+[
+  {
+    "pregunta": "¿Qué es Playwright?",
+    "opciones": [
+      "Un framework de automatización y pruebas end-to-end de aplicaciones web.",
+      "Un preprocesador de CSS.",
+      "Un gestor de bases de datos.",
+      "Un generador de sitios estáticos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué navegadores soporta Playwright de forma nativa?",
+    "opciones": [
+      "Chromium, Firefox y WebKit.",
+      "Solo Google Chrome.",
+      "Solo Mozilla Firefox.",
+      "Internet Explorer y Microsoft Edge."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué función tiene test() en Playwright Test?",
+    "opciones": [
+      "Definir un caso de prueba.",
+      "Lanzar el servidor de aplicaciones.",
+      "Compilar las hojas de estilo.",
+      "Crear un localizador de elementos."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué representa el fixture page?",
+    "opciones": [
+      "Una página del navegador aislada sobre la que actúa la prueba.",
+      "El archivo de configuración del proyecto.",
+      "El servidor de aplicaciones.",
+      "Una base de datos de prueba."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Para qué sirve expect()?",
+    "opciones": [
+      "Para realizar aserciones y validar el estado esperado.",
+      "Para esperar un tiempo fijo antes de continuar.",
+      "Para navegar a una URL.",
+      "Para instalar los navegadores."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "Playwright espera automáticamente a que los elementos estén disponibles y sean accionables antes de interactuar con ellos.",
+    "respuesta": true
+  },
+  {
+    "pregunta": "¿Qué es un locator en Playwright?",
+    "opciones": [
+      "Una referencia a elementos que se reevalúa y permite acciones y aserciones.",
+      "Un selector CSS estático que nunca cambia.",
+      "Un archivo de configuración.",
+      "Un tipo de aserción."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador se considera generalmente más robusto y accesible?",
+    "opciones": [
+      "getByRole",
+      "Un selector XPath largo",
+      "Una clase CSS generada automáticamente",
+      "nth-child"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador busca un elemento por el texto de su etiqueta label asociada?",
+    "opciones": [
+      "getByLabel",
+      "getByText",
+      "getByPlaceholder",
+      "getByTestId"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador busca por el atributo placeholder?",
+    "opciones": [
+      "getByPlaceholder",
+      "getByLabel",
+      "getByRole",
+      "getByTestId"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador busca por el texto visible?",
+    "opciones": [
+      "getByText",
+      "getByLabel",
+      "getByPlaceholder",
+      "getByTestId"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué localizador usa por defecto el atributo data-testid?",
+    "opciones": [
+      "getByTestId",
+      "getByRole",
+      "getByLabel",
+      "getByText"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Cuál es la diferencia entre fill() y press()?",
+    "opciones": [
+      "fill() establece el valor de un campo; press() simula una pulsación de tecla.",
+      "fill() pulsa Enter; press() borra el campo.",
+      "fill() solo funciona con checkboxes; press() solo con enlaces.",
+      "Ambos hacen exactamente lo mismo."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Por qué se usa await delante de las acciones de Playwright?",
+    "opciones": [
+      "Porque devuelven promesas y hay que esperar a que terminen.",
+      "Porque son operaciones síncronas.",
+      "Para compilar el código TypeScript.",
+      "Para cerrar el navegador al final."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué comprueba toBeVisible()?",
+    "opciones": [
+      "Que el elemento exista en el DOM y sea visible.",
+      "Que el elemento esté oculto.",
+      "Que el elemento tenga un texto concreto.",
+      "Que el elemento esté deshabilitado."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué comprueba toHaveCount(3)?",
+    "opciones": [
+      "Que el locator encuentre exactamente tres elementos.",
+      "Que el texto aparezca tres veces.",
+      "Que haya tres páginas abiertas.",
+      "Que el test se ejecute tres veces."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué diferencia hay entre toBeVisible() y toBeHidden()?",
+    "opciones": [
+      "toBeHidden() pasa si el elemento está oculto o no existe en el DOM; toBeVisible() exige que exista y se vea.",
+      "Ambas comprueban exactamente lo mismo.",
+      "toBeHidden() solo comprueba el texto del elemento.",
+      "toBeVisible() solo funciona con imágenes."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Por qué se recomienda evitar waitForTimeout()?",
+    "opciones": [
+      "Porque introduce esperas artificiales y puede hacer las pruebas lentas o inestables.",
+      "Porque no existe en Playwright.",
+      "Porque solo funciona en Firefox.",
+      "Porque desactiva las aserciones."
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué aserción comprueba que un botón está deshabilitado?",
+    "opciones": [
+      "toBeDisabled",
+      "toBeHidden",
+      "toBeChecked",
+      "toHaveText"
+    ],
+    "respuesta": 0
+  },
+  {
+    "pregunta": "¿Qué opción de configuración permite ejecutar las pruebas sin interfaz gráfica?",
+    "opciones": [
+      "headless: true",
+      "headed: true",
+      "slowMo: 0",
+      "trace: 'on'"
+    ],
+    "respuesta": 0
+  }
+]
