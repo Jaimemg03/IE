@@ -3,6 +3,9 @@ let asignaturaActual = null;
 let temasSeleccionados = new Set();
 let todasLasPreguntas = [];
 let preguntasSeleccionadas = [];
+let modoActual = "examen";
+let indiceEstudio = 0;
+let respuestasEstudio = [];
 
 const LETRAS = ["a", "b", "c", "d", "e", "f", "g", "h"];
 
@@ -33,6 +36,15 @@ async function iniciar() {
   document.getElementById("botonTodos").addEventListener("click", seleccionarTodosLosTemas);
   document.getElementById("botonGenerar").addEventListener("click", generarPreguntas);
   document.getElementById("botonCorregir").addEventListener("click", corregir);
+  document.getElementById("botonAnterior").addEventListener("click", () => moverEstudio(-1));
+  document.getElementById("botonSiguiente").addEventListener("click", () => moverEstudio(1));
+  document.getElementById("botonVolver").addEventListener("click", mostrarConfiguracion);
+  document.getElementById("botonVolverCuestionario").addEventListener("click", mostrarCuestionario);
+  document.getElementById("formulario").addEventListener("change", manejarCambioEstudio);
+
+  document.querySelectorAll('input[name="modo"]').forEach(radio => {
+    radio.addEventListener("change", () => cambiarModo(radio.value));
+  });
 
   seleccionarAsignatura(selector.value);
 }
@@ -46,8 +58,50 @@ function seleccionarAsignatura(id) {
   document.title = titulo;
 
   renderizarBotonesTemas();
+  reiniciarCuestionario();
+  mostrarConfiguracion();
+}
+
+function reiniciarCuestionario() {
+  preguntasSeleccionadas = [];
+  respuestasEstudio = [];
+  indiceEstudio = 0;
+
   document.getElementById("formulario").innerHTML = "";
-  document.getElementById("resultado").textContent = "";
+  document.getElementById("resumenCuestionario").textContent = "";
+  document.getElementById("vistaCuestionario").hidden = true;
+  document.getElementById("botonVolverCuestionario").hidden = true;
+
+  limpiarResultado();
+  actualizarNavegacionEstudio();
+  actualizarControlesModo();
+}
+
+function limpiarResultado() {
+  const resultado = document.getElementById("resultado");
+  resultado.textContent = "";
+  resultado.classList.remove("aprobado", "suspendido");
+}
+
+function mostrarConfiguracion() {
+  document.getElementById("vistaConfiguracion").hidden = false;
+  document.getElementById("vistaCuestionario").hidden = true;
+  document.getElementById("botonVolverCuestionario").hidden = preguntasSeleccionadas.length === 0;
+  desplazarArriba();
+}
+
+function mostrarCuestionario() {
+  if (preguntasSeleccionadas.length === 0) {
+    return;
+  }
+
+  document.getElementById("vistaConfiguracion").hidden = true;
+  document.getElementById("vistaCuestionario").hidden = false;
+  desplazarArriba();
+}
+
+function desplazarArriba() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
 
 function renderizarBotonesTemas() {
@@ -63,6 +117,17 @@ function renderizarBotonesTemas() {
     boton.addEventListener("click", () => alternarTema(boton, tema.id));
     contenedor.appendChild(boton);
   });
+
+  actualizarBotonTodos();
+}
+
+function actualizarBotonTodos() {
+  const boton = document.getElementById("botonTodos");
+  const todosSeleccionados =
+    asignaturaActual.temas.length > 0 &&
+    asignaturaActual.temas.every(tema => temasSeleccionados.has(tema.id));
+
+  boton.textContent = todosSeleccionados ? "Quitar todos" : "Seleccionar todos";
 }
 
 function alternarTema(boton, id) {
@@ -73,6 +138,8 @@ function alternarTema(boton, id) {
     temasSeleccionados.add(id);
     boton.classList.add("seleccionado");
   }
+
+  actualizarBotonTodos();
 }
 
 function seleccionarTodosLosTemas() {
@@ -88,6 +155,8 @@ function seleccionarTodosLosTemas() {
     asignaturaActual.temas.forEach(tema => temasSeleccionados.add(tema.id));
     botones.forEach(boton => boton.classList.add("seleccionado"));
   }
+
+  actualizarBotonTodos();
 }
 
 async function cargarPreguntas() {
@@ -118,11 +187,23 @@ async function generarPreguntas() {
     return;
   }
 
+  const botonGenerar = document.getElementById("botonGenerar");
+  botonGenerar.disabled = true;
+  botonGenerar.textContent = "Generando...";
+
   try {
     await cargarPreguntas();
   } catch (error) {
     alert("No se pudieron cargar uno o más archivos de preguntas. Verifica que los archivos existen y son válidos.");
     console.error(error);
+    return;
+  } finally {
+    botonGenerar.disabled = false;
+    botonGenerar.textContent = "Generar cuestionario";
+  }
+
+  if (todasLasPreguntas.length === 0) {
+    alert("No hay preguntas disponibles en los temas seleccionados.");
     return;
   }
 
@@ -137,13 +218,205 @@ async function generarPreguntas() {
 
   preguntasSeleccionadas = mezclar([...todasLasPreguntas]).slice(0, cantidad);
 
+  limpiarResultado();
+  renderizarPreguntas();
+  actualizarCabeceraCuestionario();
+  mostrarCuestionario();
+}
+
+function actualizarCabeceraCuestionario() {
+  const modo = modoActual === "estudio" ? "Estudio" : "Examen";
+  document.getElementById("tituloCuestionario").textContent =
+    `Cuestionario de ${asignaturaActual.nombre}`;
+  document.getElementById("resumenCuestionario").textContent =
+    `${preguntasSeleccionadas.length} preguntas · Modo ${modo}`;
+}
+
+function renderizarPreguntas() {
   const formulario = document.getElementById("formulario");
   formulario.innerHTML = "";
-  preguntasSeleccionadas.forEach((pregunta, index) => {
-    formulario.innerHTML += crearHTMLPregunta(pregunta, index);
-  });
 
-  document.getElementById("resultado").textContent = "";
+  if (modoActual === "estudio") {
+    indiceEstudio = 0;
+    respuestasEstudio = preguntasSeleccionadas.map(() => null);
+    renderizarPreguntaEstudio();
+  } else {
+    preguntasSeleccionadas.forEach((pregunta, index) => {
+      formulario.innerHTML += crearHTMLPregunta(pregunta, index);
+    });
+  }
+
+  actualizarControlesModo();
+}
+
+function renderizarPreguntaEstudio() {
+  const formulario = document.getElementById("formulario");
+  const pregunta = preguntasSeleccionadas[indiceEstudio];
+
+  formulario.innerHTML = crearHTMLPregunta(pregunta, indiceEstudio);
+
+  const respuestaGuardada = respuestasEstudio[indiceEstudio];
+  if (respuestaGuardada !== null) {
+    const input = formulario.querySelector(
+      `input[name="p${indiceEstudio}"][value="${respuestaGuardada}"]`
+    );
+    if (input) {
+      input.checked = true;
+    }
+    aplicarFeedbackEstudio(indiceEstudio);
+  }
+
+  actualizarNavegacionEstudio();
+}
+
+function moverEstudio(direccion) {
+  if (modoActual !== "estudio") {
+    return;
+  }
+
+  const nuevoIndice = indiceEstudio + direccion;
+  if (nuevoIndice < 0 || nuevoIndice >= preguntasSeleccionadas.length) {
+    return;
+  }
+
+  indiceEstudio = nuevoIndice;
+  renderizarPreguntaEstudio();
+}
+
+function manejarCambioEstudio(evento) {
+  if (modoActual !== "estudio") {
+    return;
+  }
+
+  const input = evento.target;
+  if (!input.matches('input[type="radio"]')) {
+    return;
+  }
+
+  // Una vez respondida, la pregunta queda fijada para poder ver la corrección.
+  if (respuestasEstudio[indiceEstudio] !== null) {
+    const anterior = document.querySelector(
+      `input[name="p${indiceEstudio}"][value="${respuestasEstudio[indiceEstudio]}"]`
+    );
+    if (anterior) {
+      anterior.checked = true;
+    }
+    return;
+  }
+
+  respuestasEstudio[indiceEstudio] = input.value;
+  aplicarFeedbackEstudio(indiceEstudio);
+}
+
+function aplicarFeedbackEstudio(index) {
+  const pregunta = preguntasSeleccionadas[index];
+  const divPregunta = document.getElementById(`pregunta${index}`);
+  const respuestaElegida = respuestasEstudio[index];
+
+  if (!pregunta || !divPregunta || respuestaElegida === null) {
+    return;
+  }
+
+  const esOpcionMultiple = Array.isArray(pregunta.opciones);
+  const indiceCorrecto = obtenerIndiceCorrecto(pregunta);
+
+  let acierto = false;
+  if (esOpcionMultiple) {
+    acierto = parseInt(respuestaElegida, 10) === indiceCorrecto;
+  } else {
+    acierto = respuestaElegida === String(pregunta.respuesta);
+  }
+
+  divPregunta.classList.toggle("correcta", acierto);
+  divPregunta.classList.toggle("incorrecta", !acierto);
+
+  const opciones = divPregunta.querySelectorAll("label.opcion");
+  let etiquetaCorrecta = null;
+
+  if (esOpcionMultiple && indiceCorrecto >= 0) {
+    etiquetaCorrecta = opciones[indiceCorrecto];
+  } else {
+    const inputCorrecto = divPregunta.querySelector(
+      `input[value="${String(pregunta.respuesta)}"]`
+    );
+    etiquetaCorrecta = inputCorrecto ? inputCorrecto.closest("label.opcion") : null;
+  }
+
+  if (etiquetaCorrecta) {
+    etiquetaCorrecta.classList.add("opcion-correcta");
+  }
+
+  if (!acierto) {
+    const inputElegido = divPregunta.querySelector(`input[value="${respuestaElegida}"]`);
+    const etiquetaElegida = inputElegido ? inputElegido.closest("label.opcion") : null;
+    if (etiquetaElegida) {
+      etiquetaElegida.classList.add("opcion-incorrecta");
+    }
+  }
+
+  let feedback = divPregunta.querySelector(".feedback-estudio");
+  if (!feedback) {
+    feedback = document.createElement("p");
+    feedback.className = "feedback-estudio";
+    divPregunta.appendChild(feedback);
+  }
+
+  feedback.classList.toggle("acierto", acierto);
+  feedback.classList.toggle("fallo", !acierto);
+  feedback.textContent = acierto
+    ? "¡Correcto!"
+    : `Incorrecto. La respuesta correcta es: ${obtenerTextoRespuestaCorrecta(pregunta)}.`;
+}
+
+function obtenerTextoRespuestaCorrecta(pregunta) {
+  if (Array.isArray(pregunta.opciones)) {
+    const indice = obtenerIndiceCorrecto(pregunta);
+    if (indice >= 0 && pregunta.opciones[indice] !== undefined) {
+      return `${LETRAS[indice]}. ${pregunta.opciones[indice]}`;
+    }
+    return "No disponible";
+  }
+
+  return String(pregunta.respuesta) === "true" ? "Verdadero" : "Falso";
+}
+
+function actualizarNavegacionEstudio() {
+  const progreso = document.getElementById("progresoEstudio");
+  const total = preguntasSeleccionadas.length;
+
+  progreso.textContent = total > 0
+    ? `Pregunta ${indiceEstudio + 1} de ${total}`
+    : "";
+
+  document.getElementById("botonAnterior").disabled = indiceEstudio <= 0;
+  document.getElementById("botonSiguiente").disabled = indiceEstudio >= total - 1;
+}
+
+function actualizarControlesModo() {
+  const enEstudio = modoActual === "estudio";
+  document.getElementById("navegacionEstudio").hidden = !enEstudio;
+  document.getElementById("botonCorregir").hidden = enEstudio;
+
+  if (enEstudio) {
+    actualizarNavegacionEstudio();
+  }
+}
+
+function cambiarModo(modo) {
+  if (modo === modoActual) {
+    return;
+  }
+
+  modoActual = modo;
+  limpiarResultado();
+
+  if (preguntasSeleccionadas.length > 0) {
+    renderizarPreguntas();
+    actualizarCabeceraCuestionario();
+  } else {
+    document.getElementById("formulario").innerHTML = "";
+    actualizarControlesModo();
+  }
 }
 
 function crearHTMLPregunta(pregunta, index) {
@@ -200,6 +473,10 @@ function obtenerIndiceCorrecto(pregunta) {
 }
 
 function corregir() {
+  if (modoActual !== "examen") {
+    return;
+  }
+
   if (preguntasSeleccionadas.length === 0) {
     alert("Primero debes generar las preguntas antes de corregir.");
     return;
@@ -244,19 +521,6 @@ function corregir() {
   const aprobado = correctas >= preguntasSeleccionadas.length / 2;
 
   resultado.textContent = `Has acertado ${correctas} de ${preguntasSeleccionadas.length} preguntas.`;
-  resultado.style.display = "block";
-  resultado.style.color = aprobado ? "green" : "red";
-  resultado.style.fontWeight = "bold";
-  resultado.style.fontSize = "20px";
-  resultado.style.marginTop = "20px";
-  resultado.style.textAlign = "center";
-  resultado.style.padding = "10px";
-  resultado.style.border = "2px solid " + (aprobado ? "green" : "red");
-  resultado.style.borderRadius = "5px";
-  resultado.style.backgroundColor = aprobado ? "#d4edda" : "#f8d7da";
-  resultado.style.width = "50%";
-  resultado.style.margin = "0 auto";
-  resultado.style.boxSizing = "border-box";
-  resultado.style.transition = "all 0.3s ease";
-  resultado.style.opacity = "1";
+  resultado.classList.remove("aprobado", "suspendido");
+  resultado.classList.add(aprobado ? "aprobado" : "suspendido");
 }

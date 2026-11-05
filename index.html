@@ -3,29 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4f46e5">
   <title>Test de autoevaluación</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1 id="titulo">Test de autoevaluación</h1>
+  <div class="pagina">
+    <header class="cabecera">
+      <h1 id="titulo">Test de autoevaluación</h1>
+      <p class="subtitulo">Configura tu práctica, responde y repasa tus fallos.</p>
+    </header>
 
-  <label for="asignatura">Seleccione la asignatura:</label>
-  <select id="asignatura"></select>
+    <main>
+      <section id="vistaConfiguracion" class="tarjeta" aria-labelledby="tituloConfiguracion">
+        <div class="tarjeta-cabecera">
+          <div>
+            <h2 id="tituloConfiguracion">Configurar cuestionario</h2>
+            <p class="texto-ayuda">Elige el modo, la asignatura y los temas que quieres practicar.</p>
+          </div>
+          <button id="botonVolverCuestionario" class="boton secundario" type="button" hidden>
+            Volver al cuestionario
+          </button>
+        </div>
 
-  <br>
-  <label>Seleccione los temas a incluir:</label>
-  <div id="contenedorBotones"></div>
+        <fieldset class="campo selector-modo">
+          <legend class="etiqueta">Modo de práctica</legend>
+          <div class="opciones-modo">
+            <label class="opcion-modo">
+              <input type="radio" name="modo" value="examen" checked>
+              <span class="opcion-modo-texto">
+                <span class="opcion-modo-titulo">Examen</span>
+                <span class="opcion-modo-descripcion">Corrige al final</span>
+              </span>
+            </label>
+            <label class="opcion-modo">
+              <input type="radio" name="modo" value="estudio">
+              <span class="opcion-modo-texto">
+                <span class="opcion-modo-titulo">Estudio</span>
+                <span class="opcion-modo-descripcion">Corrección al instante</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
 
-  <button id="botonTodos" class="boton" type="button">Seleccionar todos los temas</button>
+        <div class="campo">
+          <label class="etiqueta" for="asignatura">Asignatura</label>
+          <select id="asignatura"></select>
+        </div>
 
-  <br>
-  <label for="cantidad">¿Cuántas preguntas deseas responder?</label>
-  <input type="number" id="cantidad" min="1" max="100" value="30">
-  <button id="botonGenerar" class="boton" type="button">Generar preguntas</button>
+        <div class="campo">
+          <div class="campo-cabecera">
+            <span class="etiqueta">Temas</span>
+            <button id="botonTodos" class="boton-enlace" type="button">Seleccionar todos</button>
+          </div>
+          <div id="contenedorBotones" class="lista-temas"></div>
+        </div>
 
-  <form id="formulario"></form>
-  <button id="botonCorregir" class="boton" type="button">Corregir respuestas</button>
-  <div id="resultado"></div>
+        <div class="campo campo-cantidad">
+          <label class="etiqueta" for="cantidad">Número de preguntas</label>
+          <input type="number" id="cantidad" min="1" max="100" value="30">
+        </div>
+
+        <div class="acciones">
+          <button id="botonGenerar" class="boton primario" type="button">Generar cuestionario</button>
+        </div>
+      </section>
+
+      <section id="vistaCuestionario" class="tarjeta" aria-labelledby="tituloCuestionario" hidden>
+        <div class="tarjeta-cabecera">
+          <div>
+            <h2 id="tituloCuestionario">Cuestionario</h2>
+            <p id="resumenCuestionario" class="texto-ayuda"></p>
+          </div>
+          <button id="botonVolver" class="boton secundario" type="button">Cambiar configuración</button>
+        </div>
+
+        <form id="formulario" class="lista-preguntas"></form>
+
+        <div id="navegacionEstudio" class="navegacion-estudio" hidden>
+          <button id="botonAnterior" class="boton secundario" type="button">Anterior</button>
+          <span id="progresoEstudio"></span>
+          <button id="botonSiguiente" class="boton secundario" type="button">Siguiente</button>
+        </div>
+
+        <div class="acciones acciones-cuestionario">
+          <button id="botonCorregir" class="boton primario" type="button">Corregir respuestas</button>
+        </div>
+
+        <div id="resultado" role="status"></div>
+      </section>
+    </main>
+  </div>
 
   <script src="script.js"></script>
 </body>

@@ -4,11 +4,15 @@ Este proyecto es una herramienta interactiva diseñada para el **estudio y la au
 
 ## Características
 
+- **Configuración y cuestionario separados:** La configuración (modo, asignatura, temas y número de preguntas) se muestra en una pantalla independiente del cuestionario, con opción de volver a ella en cualquier momento.
 - **Selección de asignatura:** El usuario elige la asignatura que quiere practicar (por ejemplo, Inteligencia Emocional o Dirección y Gestión de Proyectos).
 - **Selección de temas:** Los temas mostrados se adaptan a la asignatura elegida, con opción de seleccionar todos de una vez.
+- **Dos modos de práctica:**
+  - **Modo examen:** Muestra todas las preguntas y no corrige nada hasta pulsar "Corregir respuestas".
+  - **Modo estudio:** Muestra una pregunta cada vez; al marcar una respuesta se indica al instante si es correcta y cuál es la opción correcta. Permite avanzar y retroceder con los botones "Siguiente" y "Anterior".
 - **Generación de preguntas:** El programa genera un número configurable de preguntas aleatorias basadas en los temas seleccionados.
 - **Tipos de pregunta:** Soporta preguntas de **Verdadero/Falso** y de **opción múltiple** (a/b/c/d).
-- **Corrección automática:** Al terminar, corrige las respuestas, marca los aciertos y fallos, resalta la opción correcta y muestra la puntuación.
+- **Corrección automática:** En modo examen, al terminar, corrige las respuestas, marca los aciertos y fallos, resalta la opción correcta y muestra la puntuación.
 - **Interfaz intuitiva:** Diseño visual atractivo y fácil de usar.
 
 ## Estructura del Proyecto
@@ -94,11 +98,14 @@ También puedes usar el enlace a GitHub Pages de este repositorio.
 
 5. **Utiliza el programa:**
 
+   - Selecciona el modo de práctica: **Examen** o **Estudio**.
    - Selecciona la asignatura.
    - Selecciona los temas que deseas incluir.
    - Indica el número de preguntas que deseas responder.
-   - Pulsa "Generar preguntas" para comenzar.
-   - Responde las preguntas y pulsa "Corregir respuestas" para ver tu puntuación.
+   - Pulsa "Generar cuestionario" para comenzar.
+   - En **modo examen**, responde las preguntas y pulsa "Corregir respuestas" para ver tu puntuación.
+   - En **modo estudio**, marca una respuesta para ver la corrección al instante y usa "Siguiente" y "Anterior" para navegar entre preguntas.
+   - Usa "Cambiar configuración" para volver a la pantalla de configuración sin perder las opciones elegidas.
 
 ## Licencia
 Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
